@@ -12,7 +12,10 @@ public class TestTargetRotation : MonoBehaviour
     public float timer;
     public float feetSpeed;
     public float phase,stoppingDistance,distance;
-    public Transform player;
+    public Transform player, pointofforceHand;
+    public Rigidbody arm;
+    public float streght;
+    public Vector3 directionToPlayer;
     // Start is called before the first frame update
     void Start()
     {
@@ -32,10 +35,16 @@ public class TestTargetRotation : MonoBehaviour
         timer += Time.fixedDeltaTime * feetSpeed;
         if(distance > stoppingDistance)
         {
-            //Upper Left Leg
-            Walking(joint[0], phase);
-            // Upper Right Leg
-            Walking(joint[1], -phase);
+            ////Upper Left Leg
+            //Walking(joint[0], phase);
+            //// Upper Right Leg
+            //Walking(joint[1], -phase);
+           
+        }
+        else
+        {
+           SlamTowardsPlayer(joint[4], phase);
+           //SlamTowardsPlayer(joint[5], -phase);
         }
       
        
@@ -59,7 +68,7 @@ public class TestTargetRotation : MonoBehaviour
         }
 
         
-        Vector3 directionToPlayer = player.position - transform.position;
+        directionToPlayer = player.position - transform.position;
         directionToPlayer.y = 0;
 
        
@@ -70,4 +79,9 @@ public class TestTargetRotation : MonoBehaviour
         }
     }
 
+    public void SlamTowardsPlayer(ConfigurableJoint joint , float phaseSlam)
+    {
+
+        joint.targetRotation= pointofforceHand.localRotation;
+    }
 }
