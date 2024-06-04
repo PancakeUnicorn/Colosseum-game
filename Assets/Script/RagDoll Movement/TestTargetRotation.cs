@@ -7,6 +7,7 @@ using UnityEngine;
 
 public class TestTargetRotation : MonoBehaviour
 {
+    public RotateArmTarget rotateArmTarget;
     public ConfigurableJoint[] joint;
     public Transform[] target;
     public float footHeight;
@@ -20,6 +21,7 @@ public class TestTargetRotation : MonoBehaviour
     public float maxRotation;
     public float minRotation;
     public float xRotation, rotationSpeed,rotationAmount;
+    public bool Attacking;
     // Start is called before the first frame update
     void Start()
     {
@@ -47,15 +49,13 @@ public class TestTargetRotation : MonoBehaviour
         }
         else
         {
-           SlamTowardsPlayer(joint[4], phase);
-           SlamTowardsPlayer(joint[5], -phase);
+            if (!Attacking)
+            {
+                //rotateArmTarget.StartCoroutine(rotateArmTarget.AttackTime());
+                Attacking = true;
+            }
+            
         }
-      
-       
-
-
-       
-
 
     }
     public void Walking(ConfigurableJoint joint, float phase)
@@ -83,19 +83,5 @@ public class TestTargetRotation : MonoBehaviour
         }
     }
 
-    public void SlamTowardsPlayer(ConfigurableJoint joint , float phaseSlam)
-    {
-
-
-
-        float rotationAroundX = pointofforceHand.rotation.x;
-        rotationAroundX += rotationAmount * Time.fixedDeltaTime;
-        quaternion toRotation = quaternion.Euler(new Vector3(rotationAroundX, 0, 0));
-        joint.targetRotation = toRotation;
-
-        if (pointofforceHand.rotation.x >= 360 || pointofforceHand.rotation.x <= 0)
-        {
-            rotationAroundX = 0;
-        }
-    }
+ 
 }
