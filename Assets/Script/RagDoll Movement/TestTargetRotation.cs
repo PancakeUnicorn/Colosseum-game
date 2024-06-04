@@ -1,7 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
-
+using Unity.IO.LowLevel.Unsafe;
 using Unity.Mathematics;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class TestTargetRotation : MonoBehaviour
@@ -14,8 +15,11 @@ public class TestTargetRotation : MonoBehaviour
     public float phase,stoppingDistance,distance;
     public Transform player, pointofforceHand;
     public Rigidbody arm;
-    public float streght;
+    public float streght,rotationSlam;
     public Vector3 directionToPlayer;
+    public float maxRotation;
+    public float minRotation;
+    public float xRotation, rotationSpeed,rotationAmount;
     // Start is called before the first frame update
     void Start()
     {
@@ -36,15 +40,15 @@ public class TestTargetRotation : MonoBehaviour
         if(distance > stoppingDistance)
         {
             ////Upper Left Leg
-            //Walking(joint[0], phase);
+            Walking(joint[0], phase);
             //// Upper Right Leg
-            //Walking(joint[1], -phase);
+            Walking(joint[1], -phase);
            
         }
         else
         {
            SlamTowardsPlayer(joint[4], phase);
-           //SlamTowardsPlayer(joint[5], -phase);
+           SlamTowardsPlayer(joint[5], -phase);
         }
       
        
@@ -82,6 +86,16 @@ public class TestTargetRotation : MonoBehaviour
     public void SlamTowardsPlayer(ConfigurableJoint joint , float phaseSlam)
     {
 
-        joint.targetRotation= pointofforceHand.localRotation;
+
+
+        float rotationAroundX = pointofforceHand.rotation.x;
+        rotationAroundX += rotationAmount * Time.fixedDeltaTime;
+        quaternion toRotation = quaternion.Euler(new Vector3(rotationAroundX, 0, 0));
+        joint.targetRotation = toRotation;
+
+        if (pointofforceHand.rotation.x >= 360 || pointofforceHand.rotation.x <= 0)
+        {
+            rotationAroundX = 0;
+        }
     }
 }
