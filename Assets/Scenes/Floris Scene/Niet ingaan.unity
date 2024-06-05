@@ -337,7 +337,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: c344d80d96a60cf4b840b3e05e12d193,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 9.332
+      value: 11.343
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: c344d80d96a60cf4b840b3e05e12d193,
         type: 3}
@@ -1617,7 +1617,7 @@ Transform:
   m_GameObject: {fileID: 249567125}
   serializedVersion: 2
   m_LocalRotation: {x: -0.0015320964, y: -0.000595649, z: -0.00019957202, w: 0.9999986}
-  m_LocalPosition: {x: -7.5, y: 1.74, z: 8.88}
+  m_LocalPosition: {x: -2.81, y: 1.74, z: 8.88}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -13405,6 +13405,26 @@ PrefabInstance:
       propertyPath: m_ExcludeLayers.m_Bits
       value: 256
       objectReference: {fileID: 0}
+    - target: {fileID: 1532496717121852122, guid: b0b0bb503358e744c8b8b6b3dd5aab42,
+        type: 3}
+      propertyPath: raycastLenght
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3090404416779418991, guid: b0b0bb503358e744c8b8b6b3dd5aab42,
+        type: 3}
+      propertyPath: m_AngularXMotion
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3090404416779418991, guid: b0b0bb503358e744c8b8b6b3dd5aab42,
+        type: 3}
+      propertyPath: m_AngularZMotion
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3090404416779418991, guid: b0b0bb503358e744c8b8b6b3dd5aab42,
+        type: 3}
+      propertyPath: m_HighAngularXLimit.limit
+      value: 23.85059
+      objectReference: {fileID: 0}
     - target: {fileID: 5826377000140890805, guid: b0b0bb503358e744c8b8b6b3dd5aab42,
         type: 3}
       propertyPath: m_ExcludeLayers.m_Bits
@@ -13427,6 +13447,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6892890601769182821, guid: b0b0bb503358e744c8b8b6b3dd5aab42,
         type: 3}
+      propertyPath: forceupArm
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 6892890601769182821, guid: b0b0bb503358e744c8b8b6b3dd5aab42,
+        type: 3}
       propertyPath: mainObject
       value: 
       objectReference: {fileID: 1815924021}
@@ -13439,6 +13464,16 @@ PrefabInstance:
         type: 3}
       propertyPath: directionSwing.x
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7784372938923775945, guid: b0b0bb503358e744c8b8b6b3dd5aab42,
+        type: 3}
+      propertyPath: m_LowAngularXLimit.limit
+      value: -174.50987
+      objectReference: {fileID: 0}
+    - target: {fileID: 7784372938923775945, guid: b0b0bb503358e744c8b8b6b3dd5aab42,
+        type: 3}
+      propertyPath: m_HighAngularXLimit.limit
+      value: 103.20517
       objectReference: {fileID: 0}
     - target: {fileID: 8581476054893574332, guid: b0b0bb503358e744c8b8b6b3dd5aab42,
         type: 3}

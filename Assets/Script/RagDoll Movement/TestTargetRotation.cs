@@ -50,15 +50,7 @@ public class TestTargetRotation : MonoBehaviour
             Walking(joint[1], -phase);
            
         }
-        else
-        {
-            if (!Attacking)
-            {
-                rotateArmTarget.StartCoroutine(rotateArmTarget.AttackTime());
-                Attacking = true;
-            }
-            
-        }
+        
 
     }
     public void Walking(ConfigurableJoint joint, float phase)

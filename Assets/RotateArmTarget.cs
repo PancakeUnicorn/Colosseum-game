@@ -7,12 +7,15 @@ public class RotateArmTarget : MonoBehaviour
     //public float rotationSpeed;
     //public Vector3 direction;
     public Rigidbody attackPoint,shieldPoint;
-    public float attackForce,blockForce;
+    public float attackForce,blockForce,forceupArm;
     public Vector3 directionSwing,directionBlock;
     public GameObject player;
     public int attackType;
     public TestTargetRotation targetRotation;
     public GameObject mainObject;
+    public bool isPreping;
+    private Coroutine armUp;
+    private Coroutine attack;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,43 +26,58 @@ public class RotateArmTarget : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //direction =  new Vector3 (1, 0, 0);
-        //transform.Rotate (direction*rotationSpeed);
-        if(Input.GetKeyDown(KeyCode.D))
+        if(targetRotation.distance < targetRotation.stoppingDistance)
         {
-            StartAttackShank();
+            if(attack == null)
+            {
+                attack = StartCoroutine(AttackTime());
+            }
+         
         }
-        if (Input.GetKeyDown(KeyCode.E))
-        {
-            BlockAttack();
-        }
+        
+        
     }
     void StartAttackShank()
     {
-        attackPoint.AddForce(directionSwing*attackForce,ForceMode.Impulse);
+        directionSwing = attackPoint.transform.position - player.transform.position;
+        attackPoint.AddForce(-directionSwing*attackForce,ForceMode.Impulse);
+        Debug.Log("Attacked");
     }
     void BlockAttack()
     {
         directionBlock = shieldPoint.transform.position - player.transform.position;
         shieldPoint.AddForce(-directionBlock * blockForce,ForceMode.Impulse);
     }
+    
+   
+    public IEnumerator PrepareAttacke()
+    {
+        while(isPreping)
+        {
+            attackPoint.AddForce(Vector3.up * forceupArm, ForceMode.Force);
+            Debug.Log("isPreping");
+            yield return null;
+        
+        }
+    }
+   
     public IEnumerator AttackTime()
     {
-        while(true)
+        isPreping = true;
+        if(armUp == null)
         {
-            attackType = Random.Range(0, 2);
-            switch (attackType)
-            {
-                case 0:
-                    StartAttackShank();
-                    break;
-                case 1:
-                    BlockAttack(); 
-                    break;
-            }
-            
-            yield return new WaitForSeconds(5f);
-            targetRotation.Attacking = false;
+            armUp = StartCoroutine(PrepareAttacke());
         }
+        yield return new WaitForSeconds(5f);
+        isPreping = false;
+        if(armUp != null)
+        {
+            StopCoroutine(PrepareAttacke());
+            armUp = null;
+        }
+        
+        StartAttackShank();
+        yield return new WaitForSeconds(2);
+        attack = null;
     }
 }
