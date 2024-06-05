@@ -14,30 +14,33 @@ public class TestTargetRotation : MonoBehaviour
     public float timer;
     public float feetSpeed;
     public float phase,stoppingDistance,distance;
-    public Transform player, pointofforceHand;
+    public Transform pointofforceHand;
+    public GameObject player;
     public Rigidbody arm;
     public float streght,rotationSlam;
     public Vector3 directionToPlayer;
-    public float maxRotation;
-    public float minRotation;
-    public float xRotation, rotationSpeed,rotationAmount;
     public bool Attacking;
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
-        
+        player = GameObject.Find("Player");
+        rotateArmTarget = pointofforceHand.GetComponent<RotateArmTarget>();
     }
 
     // Update is called once per frame
     private void Update()
     {
+        if(player == null)
+        {
+            player = GameObject.FindGameObjectWithTag("Player");
+        }
 
         RotateTowardsPlayer();
         phase = Mathf.Sin(timer);
     }
     void FixedUpdate()
     {
-        distance =Vector3.Distance(transform.position,player.position);
+        distance =Vector3.Distance(transform.position,player.transform.position);
         timer += Time.fixedDeltaTime * feetSpeed;
         if(distance > stoppingDistance)
         {
@@ -72,7 +75,7 @@ public class TestTargetRotation : MonoBehaviour
         }
 
         
-        directionToPlayer = player.position - transform.position;
+        directionToPlayer = player.transform.position - transform.position;
         directionToPlayer.y = 0;
 
        

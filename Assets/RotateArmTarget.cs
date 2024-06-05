@@ -9,13 +9,15 @@ public class RotateArmTarget : MonoBehaviour
     public Rigidbody attackPoint,shieldPoint;
     public float attackForce,blockForce;
     public Vector3 directionSwing,directionBlock;
-    public Transform player;
+    public GameObject player;
     public int attackType;
     public TestTargetRotation targetRotation;
+    public GameObject mainObject;
     // Start is called before the first frame update
     void Start()
     {
-
+        targetRotation = mainObject.GetComponent<TestTargetRotation>();
+        player = GameObject.FindWithTag("Player");
     }
 
     // Update is called once per frame
@@ -38,14 +40,14 @@ public class RotateArmTarget : MonoBehaviour
     }
     void BlockAttack()
     {
-        directionBlock = shieldPoint.transform.position - player.position;
+        directionBlock = shieldPoint.transform.position - player.transform.position;
         shieldPoint.AddForce(-directionBlock * blockForce,ForceMode.Impulse);
     }
     public IEnumerator AttackTime()
     {
         while(true)
         {
-             attackType = Random.Range(0, 2);
+            attackType = Random.Range(0, 2);
             switch (attackType)
             {
                 case 0:
@@ -56,7 +58,7 @@ public class RotateArmTarget : MonoBehaviour
                     break;
             }
             
-            yield return new WaitForSeconds(3f);
+            yield return new WaitForSeconds(5f);
             targetRotation.Attacking = false;
         }
     }

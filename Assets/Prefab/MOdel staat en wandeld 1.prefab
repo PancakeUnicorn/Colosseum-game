@@ -501,6 +501,7 @@ MonoBehaviour:
   player: {fileID: 0}
   attackType: 0
   targetRotation: {fileID: 9071349374194281226}
+  mainObject: {fileID: 8581476054893574332}
 --- !u!1001 &192925194907604004
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2055,7 +2056,7 @@ CapsuleCollider:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 256
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
@@ -2348,7 +2349,7 @@ CapsuleCollider:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 256
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
@@ -2524,7 +2525,7 @@ CapsuleCollider:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 256
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
@@ -2553,7 +2554,7 @@ CapsuleCollider:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 256
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
@@ -3230,8 +3231,9 @@ MonoBehaviour:
   phase: 0
   stoppingDistance: 4
   distance: 0
-  player: {fileID: 0}
   pointofforceHand: {fileID: 2763699276086571908}
+  player: {fileID: 0}
+  forceshootPoint: {fileID: 0}
   arm: {fileID: 8469414060126206416}
   streght: 0.45
   rotationSlam: 0
