@@ -51,7 +51,7 @@ public class TestTargetRotation : MonoBehaviour
         {
             if (!Attacking)
             {
-                //rotateArmTarget.StartCoroutine(rotateArmTarget.AttackTime());
+                rotateArmTarget.StartCoroutine(rotateArmTarget.AttackTime());
                 Attacking = true;
             }
             
