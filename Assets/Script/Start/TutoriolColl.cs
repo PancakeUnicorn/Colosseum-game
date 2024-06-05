@@ -1,7 +1,7 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
 using System.Threading.Tasks;
+using UnityEngine;
+using UnityEngine.Rendering;
+using Vignette = UnityEngine.Rendering.Universal.Vignette;
 
 public class TutoriolColl : MonoBehaviour
 {
@@ -10,10 +10,17 @@ public class TutoriolColl : MonoBehaviour
     public TutoriolVoice _voice;
     public bool _exit;
     public Animator _gateAni;
+    public Volume _effect;
+    Vignette _vignette;
+
+    private void Start()
+    {
+        _effect.profile.TryGet<Vignette>(out _vignette);
+    }
 
     private async void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.layer == 6)
+        if (other.gameObject.layer == 6)
         {
             _voice.PlayAudio(_audio);
 
@@ -26,7 +33,7 @@ public class TutoriolColl : MonoBehaviour
             {
                 await Task.Delay((int)_audio.length * 1000);
                 _gateAni.SetBool("Exit", true);
-                Destroy(this);
+                _vignette.intensity.value = 2;
             }
         }
     }

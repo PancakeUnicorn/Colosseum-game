@@ -14,9 +14,36 @@ public class HitCollider : MonoBehaviour
         _weapon.Hitcollider(collision.gameObject);
         _weapon.Hit(collision.collider);
 
-        if(collision.gameObject.layer == _enemyLayer)
+        if(collision.gameObject.GetComponentInParent<RaggdollHit>())
         {
             _weapon.EnemyHit(collision.gameObject);
+
+            RaggdollHit _raggdoll = collision.gameObject.GetComponentInParent<RaggdollHit>();
+
+            //if (collision.collider == _raggdoll._weakPointsColl._head)
+            //{
+            //    _raggdoll._weakPointsBool._head = true;
+            //}
+
+            if (collision.collider == _raggdoll._weakPointsColl._armL)
+            {
+                _raggdoll._weakPointsBool._armL = true;
+            }
+
+            else if (collision.collider == _raggdoll._weakPointsColl._armR)
+            {
+                _raggdoll._weakPointsBool._armR = true;
+            }
+
+            else if (collision.collider == _raggdoll._weakPointsColl._leggL)
+            {
+                _raggdoll._weakPointsBool._leggL = true;
+            }
+
+            else if (collision.collider == _raggdoll._weakPointsColl._leggR)
+            {
+                _raggdoll._weakPointsBool._leggR = true;
+            }
         }
     }
 }

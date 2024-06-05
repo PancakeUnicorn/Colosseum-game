@@ -4,7 +4,9 @@ using System;
 public class RaggdollHit : MonoBehaviour
 {
     public WeakPointsColl _weakPointsColl = new WeakPointsColl();
-    public WeakPointsJoint _weakPointsJoint = new WeakPointsJoint();    
+    public WeakPointsJoint _weakPointsJoint = new WeakPointsJoint();
+    public WeakPointsObject _weakPointGameObect = new WeakPointsObject();
+    public ObjectSpawn _objectSpawn = new ObjectSpawn();
     public WeakPointsBool _weakPointsBool = new WeakPointsBool();
 
     [Serializable]
@@ -20,11 +22,31 @@ public class RaggdollHit : MonoBehaviour
     [Serializable]
     public class WeakPointsJoint
     {
-        public CharacterJoint _head;
-        public CharacterJoint _armL;
-        public CharacterJoint _armR;
-        public CharacterJoint _leggL;
-        public CharacterJoint _leggR;
+        public ConfigurableJoint _head;
+        public ConfigurableJoint _armL;
+        public ConfigurableJoint _armR;
+        public ConfigurableJoint _leggL;
+        public ConfigurableJoint _leggR;
+    }
+
+    [Serializable]
+    public class WeakPointsObject
+    {
+        public GameObject _head;
+        public GameObject _armL;
+        public GameObject _armR;
+        public GameObject _leggL;
+        public GameObject _leggR;
+    }
+
+    [Serializable]
+    public class ObjectSpawn
+    {
+        public GameObject _head;
+        public GameObject _armL;
+        public GameObject _armR;
+        public GameObject _leggL;
+        public GameObject _leggR;
     }
 
     [Serializable]
@@ -39,82 +61,72 @@ public class RaggdollHit : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (_weakPointsBool._head && _weakPointsJoint._head)
+        if (_weakPointsBool._head )
         {
-            GameObject _obj = _weakPointsJoint._head.gameObject;
-            Destroy(_weakPointsJoint._head);
+            GameObject _obj = _weakPointGameObect._head;
+            Destroy(_obj.GetComponent<SkinnedMeshRenderer>());
 
-            _obj.transform.parent = null;
-            _obj.GetComponent<Rigidbody>().excludeLayers += 3;
-            _obj.GetComponent<Rigidbody>().excludeLayers += 6;
+            GameObject Prefab = Instantiate(_objectSpawn._head, _obj.transform.position, _obj.transform.rotation);
+            Prefab.AddComponent<UnityEngine.XR.Interaction.Toolkit.XRGrabInteractable>().useDynamicAttach = true;
+            Prefab.GetComponent<UnityEngine.XR.Interaction.Toolkit.XRGrabInteractable>().interactionLayers = 3;
 
-            UnityEngine.XR.Interaction.Toolkit.XRGrabInteractable _interactlow = _obj.AddComponent<UnityEngine.XR.Interaction.Toolkit.XRGrabInteractable>();
-            _interactlow.interactionLayers = 3;
-            _interactlow.useDynamicAttach = true;
+            _weakPointsBool._head = false;
         }
 
-        if (_weakPointsBool._armL && _weakPointsJoint._armL)
+        if (_weakPointsBool._armL)
         {
-            GameObject _obj = _weakPointsJoint._armL.gameObject;
-            Destroy(_weakPointsJoint._armL);
+            GameObject _obj = _weakPointGameObect._armL;
+            Destroy(_weakPointsColl._armL.GetComponent<Collider>());
+            _weakPointsColl._armL.GetComponentInChildren<Collider>().isTrigger = true;
+            Destroy(_obj.GetComponent<SkinnedMeshRenderer>());
 
-            _obj.transform.parent = null;
-            _obj.GetComponent<Rigidbody>().excludeLayers += 3;
-            _obj.GetComponent<Rigidbody>().excludeLayers += 6;
-            
-            UnityEngine.XR.Interaction.Toolkit.XRGrabInteractable _interactlow = _obj.AddComponent<UnityEngine.XR.Interaction.Toolkit.XRGrabInteractable>();
-            _interactlow.interactionLayers = 3;
-            _interactlow.useDynamicAttach = true;
+            GameObject Prefab = Instantiate(_objectSpawn._armL, _obj.transform.position, _obj.transform.rotation);
+            Prefab.AddComponent<UnityEngine.XR.Interaction.Toolkit.XRGrabInteractable>().useDynamicAttach = true;
+            Prefab.GetComponent<UnityEngine.XR.Interaction.Toolkit.XRGrabInteractable>().interactionLayers = 3;
 
-            DinamicOrgion _changeOrgion = _obj.AddComponent<DinamicOrgion>();
+            _weakPointsBool._armL = false;
         }
 
-        if (_weakPointsBool._armR && _weakPointsJoint._armR)
+        if (_weakPointsBool._armR)
         {
-            GameObject _obj = _weakPointsJoint._armR.gameObject;
-            Destroy(_weakPointsJoint._armR);
+            GameObject _obj = _weakPointGameObect._armR;
+            Destroy(_weakPointsColl._armR.GetComponent<Collider>());
+            _weakPointsColl._armR.GetComponentInChildren<Collider>().isTrigger = true;
+            Destroy(_obj.GetComponent<SkinnedMeshRenderer>());
 
-            _obj.transform.parent = null;
-            _obj.GetComponent<Rigidbody>().excludeLayers += 3;
-            _obj.GetComponent<Rigidbody>().excludeLayers += 6;
+            GameObject Prefab = Instantiate(_objectSpawn._armR, _obj.transform.position, _obj.transform.rotation);
+            Prefab.AddComponent<UnityEngine.XR.Interaction.Toolkit.XRGrabInteractable>().useDynamicAttach = true;
+            Prefab.GetComponent<UnityEngine.XR.Interaction.Toolkit.XRGrabInteractable>().interactionLayers = 3;
 
-            UnityEngine.XR.Interaction.Toolkit.XRGrabInteractable _interactlow = _obj.AddComponent<UnityEngine.XR.Interaction.Toolkit.XRGrabInteractable>();
-            _interactlow.interactionLayers = 3;
-            _interactlow.useDynamicAttach = true;
-
-            DinamicOrgion _changeOrgion = _obj.AddComponent<DinamicOrgion>();
+            _weakPointsBool._armR = false;
         }
 
-        if (_weakPointsBool._leggL && _weakPointsJoint._leggL)
+        if (_weakPointsBool._leggL)
         {
-            GameObject _obj = _weakPointsJoint._leggL.gameObject;
-            Destroy(_weakPointsJoint._leggL);
+            GameObject _obj = _weakPointGameObect._leggL;
+            Destroy(_weakPointsColl._leggL.GetComponent<Collider>());
+            _weakPointsColl._leggL.GetComponentInChildren<Collider>().isTrigger = true;
+            Destroy(_obj.GetComponent<SkinnedMeshRenderer>());
 
-            _obj.transform.parent = null;
-            _obj.GetComponent<Rigidbody>().excludeLayers += 3;
-            _obj.GetComponent<Rigidbody>().excludeLayers += 6;
+            GameObject Prefab = Instantiate(_objectSpawn._leggL, _obj.transform.position, _obj.transform.rotation);
+            Prefab.AddComponent<UnityEngine.XR.Interaction.Toolkit.XRGrabInteractable>().useDynamicAttach = true;
+            Prefab.GetComponent<UnityEngine.XR.Interaction.Toolkit.XRGrabInteractable>().interactionLayers = 3;
 
-            UnityEngine.XR.Interaction.Toolkit.XRGrabInteractable _interactlow = _obj.AddComponent<UnityEngine.XR.Interaction.Toolkit.XRGrabInteractable>();
-            _interactlow.interactionLayers = 3;
-            _interactlow.useDynamicAttach = true;
-
-            DinamicOrgion _changeOrgion = _obj.AddComponent<DinamicOrgion>();
+            _weakPointsBool._leggL = false;
         }
 
-        if (_weakPointsBool._leggR && _weakPointsJoint._leggR)
+        if (_weakPointsBool._leggR)
         {
-            GameObject _obj = _weakPointsJoint._leggR.gameObject;
-            Destroy(_weakPointsJoint._leggR);
+            GameObject _obj = _weakPointGameObect._leggR;
+            Destroy(_weakPointsColl._leggR.GetComponent<Collider>());
+            _weakPointsColl._leggR.GetComponentInChildren<Collider>().isTrigger = true;
+            Destroy(_obj.GetComponent<SkinnedMeshRenderer>());
 
-            _obj.transform.parent = null;
-            _obj.GetComponent<Rigidbody>().excludeLayers += 3;
-            _obj.GetComponent<Rigidbody>().excludeLayers += 6;
+            GameObject Prefab = Instantiate(_objectSpawn._leggR, _obj.transform.position, _obj.transform.rotation);
+            Prefab.AddComponent<UnityEngine.XR.Interaction.Toolkit.XRGrabInteractable>().useDynamicAttach = true;
+            Prefab.GetComponent<UnityEngine.XR.Interaction.Toolkit.XRGrabInteractable>().interactionLayers = 3;
 
-            UnityEngine.XR.Interaction.Toolkit.XRGrabInteractable _interactlow = _obj.AddComponent<UnityEngine.XR.Interaction.Toolkit.XRGrabInteractable>();
-            _interactlow.interactionLayers = 3;
-            _interactlow.useDynamicAttach = true;
-
-            DinamicOrgion _changeOrgion = _obj.AddComponent<DinamicOrgion>();
+            _weakPointsBool._leggR = false;
         }
     }
 }

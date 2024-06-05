@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c809f2952065a54088204736e4720ea, type: 3}
   m_Name: Electro
   m_EditorClassIdentifier: 
-  _EmissionColor: {r: 0.976465, g: 1, b: 0, a: 0}
+  _EmissionColor: {r: 1, g: 1, b: 1, a: 0}
   _ellement: 3
