@@ -333,6 +333,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 5468636991493202841}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 0b77e535810319642bb29a80e41f3376,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1063901329509249346}
   m_SourcePrefab: {fileID: 100100000, guid: 0b77e535810319642bb29a80e41f3376, type: 3}
 --- !u!1 &2587536663214643319 stripped
 GameObject:
@@ -402,8 +406,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.043759227, y: 0.16871059, z: 0.046110302}
-  m_Center: {x: -0.00013333559, y: 0.04872507, z: -0.0028899908}
+  m_Size: {x: 0.043759227, y: 0.16523814, z: 0.046110302}
+  m_Center: {x: -0.00013333559, y: 0.050461292, z: -0.0028899908}
 --- !u!54 &7357178596732915552
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -598,6 +602,27 @@ MonoBehaviour:
   m_StartingSingleGrabTransformers: []
   m_StartingMultipleGrabTransformers: []
   m_AddDefaultGrabTransformers: 1
+--- !u!65 &1063901329509249346
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2587536663214643319}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.11710907, y: 0.012201548, z: 0.19494238}
+  m_Center: {x: 0, y: 0.14196491, z: -0.00019659102}
 --- !u!4 &2928208708536435405 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 0b77e535810319642bb29a80e41f3376,
