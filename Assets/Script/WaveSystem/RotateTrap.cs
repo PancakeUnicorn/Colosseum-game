@@ -8,7 +8,7 @@ public class RotateTrap : MonoBehaviour
     public TestTargetRotation targetRotation;
     public float speed;
     public float treshold;
-    public GameObject animation;
+    public GameObject particle;
     public ParticleSystem fire;
     // Start is called before the first frame update
     void Start()
@@ -21,12 +21,12 @@ public class RotateTrap : MonoBehaviour
     {
         if(targetRotation.distance <= treshold)
         {
-           animation.SetActive(true);
+            particle.SetActive(true);
             transform.Rotate(Vector3.up * speed * Time.deltaTime);
         }
         else
         {
-            animation.SetActive(false);
+            particle.SetActive(false);
         }
     }
     public void OnTriggerEnter(Collider other)
