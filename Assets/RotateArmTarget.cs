@@ -68,7 +68,7 @@ public class RotateArmTarget : MonoBehaviour
         {
             armUp = StartCoroutine(PrepareAttacke());
         }
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(2f);
         isPreping = false;
         if(armUp != null)
         {
@@ -77,7 +77,7 @@ public class RotateArmTarget : MonoBehaviour
         }
         
         StartAttackShank();
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(5);
         attack = null;
     }
 }

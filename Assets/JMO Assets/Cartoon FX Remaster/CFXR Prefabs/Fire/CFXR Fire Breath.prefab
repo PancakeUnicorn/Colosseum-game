@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1012527154846524}
   - component: {fileID: 1741693452841693106}
+  - component: {fileID: 4306019563984528219}
   m_Layer: 0
   m_Name: Point Light
   m_TagString: Untagged
@@ -94,6 +95,29 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &4306019563984528219
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7684677543225702287}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0
 --- !u!1 &8764043878647920493
 GameObject:
   m_ObjectHideFlags: 0
@@ -121,8 +145,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8764043878647920493}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: 0.007574491, y: 0.01400412, z: -0.8794717, w: -0.47568485}
+  m_LocalPosition: {x: 0.002664594, y: 0.001742613, z: 0.00005069375}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -131,7 +155,7 @@ Transform:
   - {fileID: 1012527154846524}
   - {fileID: 5766757296824354946}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0.999, y: -1.527, z: -236.82901}
 --- !u!198 &8891297334280618237
 ParticleSystem:
   m_ObjectHideFlags: 0
@@ -566,7 +590,7 @@ ParticleSystem:
     gravityModifier:
       serializedVersion: 2
       minMaxState: 0
-      scalar: -0.5
+      scalar: 0
       minScalar: 0
       maxCurve:
         serializedVersion: 2
@@ -4942,7 +4966,7 @@ Transform:
   m_GameObject: {fileID: 8764373218812076563}
   serializedVersion: 2
   m_LocalRotation: {x: -0.17364825, y: 0, z: 0, w: 0.9848078}
-  m_LocalPosition: {x: 0, y: 0.78, z: 2.37}
+  m_LocalPosition: {x: -0, y: 0.27, z: 0.96}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5166,7 +5190,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 1
+      scalar: 0.4
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -14259,7 +14283,7 @@ PrefabInstance:
     - target: {fileID: 1206498299807332550, guid: f16a1dddcd12503408e6352d39d6a74d,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -0.12
       objectReference: {fileID: 0}
     - target: {fileID: 1206498299807332550, guid: f16a1dddcd12503408e6352d39d6a74d,
         type: 3}
@@ -14269,7 +14293,7 @@ PrefabInstance:
     - target: {fileID: 1206498299807332550, guid: f16a1dddcd12503408e6352d39d6a74d,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 1206498299807332550, guid: f16a1dddcd12503408e6352d39d6a74d,
         type: 3}
@@ -14310,6 +14334,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CFXR4 Sun 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1206498299807332555, guid: f16a1dddcd12503408e6352d39d6a74d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3405899300174267242, guid: f16a1dddcd12503408e6352d39d6a74d,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
