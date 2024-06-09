@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class RotateArmTarget : MonoBehaviour
 {
-    //public float rotationSpeed;
-    //public Vector3 direction;
+    
     public Rigidbody attackPoint,shieldPoint;
     public Transform handSword;
     public float attackForce,blockForce,forceupArm;
@@ -15,34 +14,60 @@ public class RotateArmTarget : MonoBehaviour
     public TestTargetRotation targetRotation;
     public GameObject mainObject;
     public bool isPreping;
-    private Coroutine armUp;
-    private Coroutine attack;
+    public bool hasAttacked;
+    public EnemyState currentState;
+    public enum EnemyState
+    {
+        Walking,
+        PrepareAttack,
+        Attacking,
+        Blocking
+    }
     // Start is called before the first frame update
     void Start()
     {
         targetRotation = mainObject.GetComponent<TestTargetRotation>();
         player = GameObject.FindWithTag("Player");
+        currentState = EnemyState.Walking;
     }
 
     // Update is called once per frame
     void Update()
     {
-        //if(targetRotation.distance < targetRotation.stoppingDistance)
-        //{
-        //    if(attack == null)
-        //    {
-        //        attack = StartCoroutine(AttackTime());
-        //    }
+        switch (currentState)
+        {
+            case EnemyState.Walking:
+                UpdateWalking();
+                break;
+            case EnemyState.PrepareAttack:
+                StartCoroutine(UpdatePrepareAttack());
+                break;
+            case EnemyState.Attacking:
+                UpdateAttacking();
+                break;
 
-        //}
-        PrepareAttacke();
-        
+        }
+
     }
-    void StartAttackShank()
+    void UpdateWalking()
+    {
+        PrepareAttacke();
+        if(targetRotation.distance<=targetRotation.stoppingDistance)
+        {
+            currentState = EnemyState.PrepareAttack;
+        }
+    }
+    void UpdateAttacking()
+    {
+        PerformAttack();
+        currentState = EnemyState.Walking;
+    }
+    void PerformAttack()
     {
         directionSwing = attackPoint.transform.position - player.transform.position;
         attackPoint.AddForce(-directionSwing*attackForce,ForceMode.Impulse);
-        Debug.Log("Attacked");
+        
+        
     }
     void BlockAttack()
     {
@@ -50,33 +75,18 @@ public class RotateArmTarget : MonoBehaviour
         shieldPoint.AddForce(-directionBlock * blockForce,ForceMode.Impulse);
     }
     
-   
+   IEnumerator UpdatePrepareAttack()
+    {
+        PrepareAttacke();
+        yield return new WaitForSeconds(2);
+        currentState = EnemyState.Attacking;
+    }
     public void PrepareAttacke()
     {
-       
-            attackPoint.AddForce(-handSword.up* forceupArm, ForceMode.Force);
-            Debug.Log("isPreping");
-           
+        shieldPoint.AddForce(Vector3.up*forceupArm,ForceMode.Force);
+        attackPoint.AddForce(Vector3.up* forceupArm, ForceMode.Force);
+          
         
     }
    
-    //public IEnumerator AttackTime()
-    //{
-    //    isPreping = true;
-    //    if(armUp == null)
-    //    {
-    //        armUp = StartCoroutine(PrepareAttacke());
-    //    }
-    //    yield return new WaitForSeconds(2f);
-    //    isPreping = false;
-    //    if(armUp != null)
-    //    {
-    //        StopCoroutine(PrepareAttacke());
-    //        armUp = null;
-    //    }
-        
-    //    StartAttackShank();
-    //    yield return new WaitForSeconds(5);
-    //    attack = null;
-    //}
 }

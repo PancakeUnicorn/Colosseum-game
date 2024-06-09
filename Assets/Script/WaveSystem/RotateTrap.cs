@@ -10,6 +10,7 @@ public class RotateTrap : MonoBehaviour
     public float treshold;
     public GameObject particle;
     public ParticleSystem fire;
+    public bool onFire = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -32,7 +33,12 @@ public class RotateTrap : MonoBehaviour
     public void OnTriggerEnter(Collider other)
     {
         fire = other.gameObject.GetComponentInParent<TestTargetRotation>().GetComponentInChildren<ParticleSystem>();
-        fire.Play();
+        if(fire != null)
+        {
+            fire.Play();
+            onFire = true;
+        }
         
     }
+    
 }
