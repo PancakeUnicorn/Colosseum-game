@@ -34,7 +34,9 @@ public class RaggdollHit : MonoBehaviour
     {
         public GameObject _head;
         public GameObject _armL;
+        public GameObject _weaponL;
         public GameObject _armR;
+        public GameObject _weaponR;
         public GameObject _leggL;
         public GameObject _leggR;
     }
@@ -44,7 +46,9 @@ public class RaggdollHit : MonoBehaviour
     {
         public GameObject _head;
         public GameObject _armL;
+        public GameObject _weaponL;
         public GameObject _armR;
+        public GameObject _weaponR;
         public GameObject _leggL;
         public GameObject _leggR;
     }
@@ -64,6 +68,8 @@ public class RaggdollHit : MonoBehaviour
         if (_weakPointsBool._head )
         {
             GameObject _obj = _weakPointGameObect._head;
+            Destroy(_obj.GetComponentInChildren<SkinnedMeshRenderer>());
+            Destroy(_obj.GetComponentInChildren<SkinnedMeshRenderer>());
             Destroy(_obj.GetComponent<SkinnedMeshRenderer>());
 
             GameObject Prefab = Instantiate(_objectSpawn._head, _obj.transform.position, _obj.transform.rotation);
@@ -80,6 +86,12 @@ public class RaggdollHit : MonoBehaviour
             _weakPointsColl._armL.GetComponentInChildren<Collider>().isTrigger = true;
             Destroy(_obj.GetComponent<SkinnedMeshRenderer>());
 
+            if (_weakPointGameObect._weaponL)
+            {
+                Instantiate(_objectSpawn._weaponL, _weakPointGameObect._weaponL.transform.position, _weakPointGameObect._weaponL.transform.rotation);
+                Destroy(_weakPointGameObect._weaponL);
+            }
+
             GameObject Prefab = Instantiate(_objectSpawn._armL, _obj.transform.position, _obj.transform.rotation);
             Prefab.AddComponent<UnityEngine.XR.Interaction.Toolkit.XRGrabInteractable>().useDynamicAttach = true;
             Prefab.GetComponent<UnityEngine.XR.Interaction.Toolkit.XRGrabInteractable>().interactionLayers = 3;
@@ -93,6 +105,13 @@ public class RaggdollHit : MonoBehaviour
             Destroy(_weakPointsColl._armR.GetComponent<Collider>());
             _weakPointsColl._armR.GetComponentInChildren<Collider>().isTrigger = true;
             Destroy(_obj.GetComponent<SkinnedMeshRenderer>());
+
+            if (_weakPointGameObect._weaponR)
+            {
+                Instantiate(_objectSpawn._weaponR, _weakPointGameObect._weaponR.transform.position, _weakPointGameObect._weaponR.transform.rotation);
+                Destroy(_weakPointGameObect._weaponR);
+            }
+
 
             GameObject Prefab = Instantiate(_objectSpawn._armR, _obj.transform.position, _obj.transform.rotation);
             Prefab.AddComponent<UnityEngine.XR.Interaction.Toolkit.XRGrabInteractable>().useDynamicAttach = true;

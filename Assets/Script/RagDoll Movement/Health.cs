@@ -20,7 +20,7 @@ public class Health : MonoBehaviour
         bodyParts = gameObject.GetComponentsInChildren<HealthBodyParts>();
         walking = gameObject.GetComponent<TestTargetRotation>();
         attack= gameObject.GetComponentInChildren<RotateArmTarget>();
-        fireTrap =GameObject.FindGameObjectWithTag("FireTrap").GetComponent<RotateTrap>();
+        fireTrap = GameObject.FindGameObjectWithTag("FireTrap").GetComponent<RotateTrap>();
         CalculateHealth();
     }
 
@@ -34,6 +34,11 @@ public class Health : MonoBehaviour
        
      
         if(lifePoints <= 0)
+        {
+            Death();
+        }
+
+        if (bodyParts[2].healthBodyPart <= 0)
         {
             Death();
         }

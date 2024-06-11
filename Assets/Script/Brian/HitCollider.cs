@@ -20,29 +20,54 @@ public class HitCollider : MonoBehaviour
 
             RaggdollHit _raggdoll = collision.gameObject.GetComponentInParent<RaggdollHit>();
 
-            //if (collision.collider == _raggdoll._weakPointsColl._head)
-            //{
-            //    _raggdoll._weakPointsBool._head = true;
-            //}
+            if (collision.collider == _raggdoll._weakPointsColl._head)
+            {
+                _raggdoll._weakPointsColl._head.GetComponent<HealthBodyParts>().healthBodyPart -= _weapon._sharpnes;
+
+                if (_raggdoll._weakPointsColl._head.GetComponent<HealthBodyParts>().healthBodyPart <= 0)
+                {
+                    _raggdoll._weakPointsBool._head = true;
+                }
+            }
 
             if (collision.collider == _raggdoll._weakPointsColl._armL)
             {
-                _raggdoll._weakPointsBool._armL = true;
+                _raggdoll._weakPointsColl._armL.GetComponent<HealthBodyParts>().healthBodyPart -= _weapon._sharpnes;
+
+                if (_raggdoll._weakPointsColl._armL.GetComponent<HealthBodyParts>().healthBodyPart <= 0)
+                {
+                    _raggdoll._weakPointsBool._armL = true;
+                }
             }
 
             else if (collision.collider == _raggdoll._weakPointsColl._armR)
             {
-                _raggdoll._weakPointsBool._armR = true;
+                _raggdoll._weakPointsColl._armR.GetComponent<HealthBodyParts>().healthBodyPart -= _weapon._sharpnes;
+
+                if (_raggdoll._weakPointsColl._armR.GetComponent<HealthBodyParts>().healthBodyPart <= 0)
+                {
+                    _raggdoll._weakPointsBool._armR = true;
+                }
             }
 
             else if (collision.collider == _raggdoll._weakPointsColl._leggL)
             {
-                _raggdoll._weakPointsBool._leggL = true;
+                _raggdoll._weakPointsColl._leggL.GetComponent<HealthBodyParts>().healthBodyPart -= _weapon._sharpnes;
+
+                if (_raggdoll._weakPointsColl._leggL.GetComponent<HealthBodyParts>().healthBodyPart <= 0)
+                {
+                    _raggdoll._weakPointsBool._leggL = true;
+                }
             }
 
             else if (collision.collider == _raggdoll._weakPointsColl._leggR)
             {
-                _raggdoll._weakPointsBool._leggR = true;
+                _raggdoll._weakPointsColl._leggR.GetComponent<HealthBodyParts>().healthBodyPart -= _weapon._sharpnes;
+
+                if (_raggdoll._weakPointsColl._leggR.GetComponent<HealthBodyParts>().healthBodyPart <= 0)
+                {
+                    _raggdoll._weakPointsBool._leggR = true;
+                }
             }
         }
     }
