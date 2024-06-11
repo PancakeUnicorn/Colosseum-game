@@ -68,7 +68,7 @@ public class TestTargetRotation : MonoBehaviour
 
         
         directionToPlayer = player.transform.position - transform.position;
-        directionToPlayer.y = 0;
+        directionToPlayer.y = 0; 
 
        
         if (directionToPlayer != Vector3.zero)

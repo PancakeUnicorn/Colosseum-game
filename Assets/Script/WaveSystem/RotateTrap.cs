@@ -11,11 +11,7 @@ public class RotateTrap : MonoBehaviour
     public GameObject particle;
     public ParticleSystem fire;
     public bool onFire = false;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+   
 
     // Update is called once per frame
     void Update()
@@ -32,12 +28,17 @@ public class RotateTrap : MonoBehaviour
     }
     public void OnTriggerEnter(Collider other)
     {
-        fire = other.gameObject.GetComponentInParent<TestTargetRotation>().GetComponentInChildren<ParticleSystem>();
-        if(fire != null)
+        if(other.tag == "Enemy")
         {
-            fire.Play();
-            onFire = true;
+            Debug.Log("Hit");
+            fire = other.gameObject.GetComponentInParent<TestTargetRotation>().GetComponentInChildren<ParticleSystem>();
+            if (fire != null)
+            {
+                fire.Play();
+                onFire = true;
+            }
         }
+      
         
     }
     
