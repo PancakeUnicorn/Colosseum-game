@@ -13,6 +13,7 @@ public class Health : MonoBehaviour
     public TestTargetRotation walking;
     public RotateArmTarget attack;
     public RotateTrap fireTrap;
+    public Material burned;
     void Start()
     {
         rigidbodies = gameObject.GetComponentsInChildren<Rigidbody>();
@@ -89,7 +90,8 @@ public class Health : MonoBehaviour
     {
         lifePoints -= 0.1f;
 
-        yield return new WaitForSeconds(5f);
+
+        yield return new WaitForSeconds(4f);
 
         
         fireTrap.onFire = false;
