@@ -7,7 +7,8 @@ public enum WeaponType
     Sword,
     Axe,
     Spear,
-    Hammer
+    Hammer,
+    Staff
 }
 
 public class BaseWeapon : MonoBehaviour
@@ -26,7 +27,6 @@ public class BaseWeapon : MonoBehaviour
     public LayerMask _upgradeLayer;
 
     public EllementStoneScripObject _upgrade;
-
 
     [HideInInspector] public bool _holding;
     LayerMask _holdingLayer;
@@ -47,7 +47,6 @@ public class BaseWeapon : MonoBehaviour
         public Transform endSlicePoint;
         public VelocityEstimator velocityEstimator;
         public LayerMask sliceableLayer;
-        public float cutForce = 50f;
 
         [Serializable]
         public class SlideMaterials

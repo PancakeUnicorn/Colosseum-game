@@ -14,6 +14,8 @@ public class Health : MonoBehaviour
     public RotateArmTarget attack;
     public RotateTrap fireTrap;
     public Material burned;
+
+    public List<GameObject> _spawnedParts;
     void Start()
     {
         rigidbodies = gameObject.GetComponentsInChildren<Rigidbody>();
@@ -85,6 +87,13 @@ public class Health : MonoBehaviour
         }
         attack.enabled = false;
         walking.enabled = false;
+
+        foreach (GameObject Obj in _spawnedParts)
+        {
+            Obj.AddComponent<Destroy>()._destroyDelay = 5;
+        }
+
+        gameObject.AddComponent<Destroy>()._destroyDelay = 5;
     }
     public IEnumerator OnFire()
     {

@@ -4,7 +4,7 @@ using System;
 public class RaggdollHit : MonoBehaviour
 {
     public WeakPointsColl _weakPointsColl = new WeakPointsColl();
-    public WeakPointsJoint _weakPointsJoint = new WeakPointsJoint();
+    public ExtraColl _extraColl = new ExtraColl();
     public WeakPointsObject _weakPointGameObect = new WeakPointsObject();
     public ObjectSpawn _objectSpawn = new ObjectSpawn();
     public WeakPointsBool _weakPointsBool = new WeakPointsBool();
@@ -20,13 +20,12 @@ public class RaggdollHit : MonoBehaviour
     }
 
     [Serializable]
-    public class WeakPointsJoint
+    public class ExtraColl
     {
-        public ConfigurableJoint _head;
-        public ConfigurableJoint _armL;
-        public ConfigurableJoint _armR;
-        public ConfigurableJoint _leggL;
-        public ConfigurableJoint _leggR;
+        public Collider _armL;
+        public Collider _armR;
+        public Collider _leggL;
+        public Collider _leggR;
     }
 
     [Serializable]
@@ -75,6 +74,7 @@ public class RaggdollHit : MonoBehaviour
             GameObject Prefab = Instantiate(_objectSpawn._head, _obj.transform.position, _obj.transform.rotation);
             Prefab.AddComponent<UnityEngine.XR.Interaction.Toolkit.XRGrabInteractable>().useDynamicAttach = true;
             Prefab.GetComponent<UnityEngine.XR.Interaction.Toolkit.XRGrabInteractable>().interactionLayers = 3;
+            GetComponentInParent<Health>()._spawnedParts.Add(Prefab);
 
             _weakPointsBool._head = false;
         }
@@ -82,8 +82,8 @@ public class RaggdollHit : MonoBehaviour
         if (_weakPointsBool._armL)
         {
             GameObject _obj = _weakPointGameObect._armL;
-            Destroy(_weakPointsColl._armL.GetComponent<Collider>());
-            _weakPointsColl._armL.GetComponentInChildren<Collider>().isTrigger = true;
+            Destroy(_weakPointsColl._armL);
+            Destroy(_extraColl._armL);
             Destroy(_obj.GetComponent<SkinnedMeshRenderer>());
 
             if (_weakPointGameObect._weaponL)
@@ -95,6 +95,7 @@ public class RaggdollHit : MonoBehaviour
             GameObject Prefab = Instantiate(_objectSpawn._armL, _obj.transform.position, _obj.transform.rotation);
             Prefab.AddComponent<UnityEngine.XR.Interaction.Toolkit.XRGrabInteractable>().useDynamicAttach = true;
             Prefab.GetComponent<UnityEngine.XR.Interaction.Toolkit.XRGrabInteractable>().interactionLayers = 3;
+            GetComponentInParent<Health>()._spawnedParts.Add(Prefab);
 
             _weakPointsBool._armL = false;
         }
@@ -103,7 +104,7 @@ public class RaggdollHit : MonoBehaviour
         {
             GameObject _obj = _weakPointGameObect._armR;
             Destroy(_weakPointsColl._armR.GetComponent<Collider>());
-            _weakPointsColl._armR.GetComponentInChildren<Collider>().isTrigger = true;
+            Destroy(_extraColl._armR);
             Destroy(_obj.GetComponent<SkinnedMeshRenderer>());
 
             if (_weakPointGameObect._weaponR)
@@ -116,6 +117,7 @@ public class RaggdollHit : MonoBehaviour
             GameObject Prefab = Instantiate(_objectSpawn._armR, _obj.transform.position, _obj.transform.rotation);
             Prefab.AddComponent<UnityEngine.XR.Interaction.Toolkit.XRGrabInteractable>().useDynamicAttach = true;
             Prefab.GetComponent<UnityEngine.XR.Interaction.Toolkit.XRGrabInteractable>().interactionLayers = 3;
+            GetComponentInParent<Health>()._spawnedParts.Add(Prefab);
 
             _weakPointsBool._armR = false;
         }
@@ -124,12 +126,13 @@ public class RaggdollHit : MonoBehaviour
         {
             GameObject _obj = _weakPointGameObect._leggL;
             Destroy(_weakPointsColl._leggL.GetComponent<Collider>());
-            _weakPointsColl._leggL.GetComponentInChildren<Collider>().isTrigger = true;
+            Destroy(_extraColl._leggL);
             Destroy(_obj.GetComponent<SkinnedMeshRenderer>());
 
             GameObject Prefab = Instantiate(_objectSpawn._leggL, _obj.transform.position, _obj.transform.rotation);
             Prefab.AddComponent<UnityEngine.XR.Interaction.Toolkit.XRGrabInteractable>().useDynamicAttach = true;
             Prefab.GetComponent<UnityEngine.XR.Interaction.Toolkit.XRGrabInteractable>().interactionLayers = 3;
+            GetComponentInParent<Health>()._spawnedParts.Add(Prefab);
 
             _weakPointsBool._leggL = false;
         }
@@ -138,12 +141,13 @@ public class RaggdollHit : MonoBehaviour
         {
             GameObject _obj = _weakPointGameObect._leggR;
             Destroy(_weakPointsColl._leggR.GetComponent<Collider>());
-            _weakPointsColl._leggR.GetComponentInChildren<Collider>().isTrigger = true;
+            Destroy(_extraColl._leggR);
             Destroy(_obj.GetComponent<SkinnedMeshRenderer>());
 
             GameObject Prefab = Instantiate(_objectSpawn._leggR, _obj.transform.position, _obj.transform.rotation);
             Prefab.AddComponent<UnityEngine.XR.Interaction.Toolkit.XRGrabInteractable>().useDynamicAttach = true;
             Prefab.GetComponent<UnityEngine.XR.Interaction.Toolkit.XRGrabInteractable>().interactionLayers = 3;
+            GetComponentInParent<Health>()._spawnedParts.Add(Prefab);
 
             _weakPointsBool._leggR = false;
         }
