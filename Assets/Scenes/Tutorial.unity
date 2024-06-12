@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0, g: 0, b: 0, a: 1}
-  m_SkyboxMaterial: {fileID: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: af96fc002c439e547ac88880ca212d67, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 0
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 0}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -838,57 +838,57 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1490885436}
     m_Modifications:
     - target: {fileID: 3670476196026773083, guid: e3fa5c6b48073954db1f78769f35c603,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -60.852
+      value: -0.01
       objectReference: {fileID: 0}
     - target: {fileID: 3670476196026773083, guid: e3fa5c6b48073954db1f78769f35c603,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.5613995
+      value: -0.114
       objectReference: {fileID: 0}
     - target: {fileID: 3670476196026773083, guid: e3fa5c6b48073954db1f78769f35c603,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -14.337
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3670476196026773083, guid: e3fa5c6b48073954db1f78769f35c603,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.1693632
       objectReference: {fileID: 0}
     - target: {fileID: 3670476196026773083, guid: e3fa5c6b48073954db1f78769f35c603,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0.085896686
       objectReference: {fileID: 0}
     - target: {fileID: 3670476196026773083, guid: e3fa5c6b48073954db1f78769f35c603,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: -0.98180336
       objectReference: {fileID: 0}
     - target: {fileID: 3670476196026773083, guid: e3fa5c6b48073954db1f78769f35c603,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: -0.000000021420412
       objectReference: {fileID: 0}
     - target: {fileID: 3670476196026773083, guid: e3fa5c6b48073954db1f78769f35c603,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
+      value: -1.667
       objectReference: {fileID: 0}
     - target: {fileID: 3670476196026773083, guid: e3fa5c6b48073954db1f78769f35c603,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: -160.567
       objectReference: {fileID: 0}
     - target: {fileID: 3670476196026773083, guid: e3fa5c6b48073954db1f78769f35c603,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
+      value: 9.715
       objectReference: {fileID: 0}
     - target: {fileID: 4160189210697118945, guid: e3fa5c6b48073954db1f78769f35c603,
         type: 3}
@@ -905,6 +905,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 74a3eab5696f63c4fb44fee73bc68003,
     type: 3}
   m_PrefabInstance: {fileID: 1558706898}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &445545189 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8582194383030469196, guid: b1cf30d2314423547af5dc64b593306a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1952449024}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &461164233
 GameObject:
@@ -1556,6 +1562,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8447819882725403660, guid: 99679a6b3d33fbb4a8eece0e5ae65412,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -1655,6 +1666,12 @@ MonoBehaviour:
   - {fileID: 0}
   _weakpointsHealth:
   - 1
+--- !u!4 &664954206 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3780481344537508875, guid: 02f4eccfed45cc0418c44946434ea42d,
+    type: 3}
+  m_PrefabInstance: {fileID: 813754131}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &669534216
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2653,6 +2670,12 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 804796395689761281, guid: bb6cd1ee9e68d1740bff36d97fef6cc5, type: 3}
+--- !u!4 &703780056 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3670476196026773083, guid: e3fa5c6b48073954db1f78769f35c603,
+    type: 3}
+  m_PrefabInstance: {fileID: 389091498}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &711571882
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3608,57 +3631,77 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1793468913}
     m_Modifications:
     - target: {fileID: 3780481344537508875, guid: 02f4eccfed45cc0418c44946434ea42d,
         type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.4600001
+      objectReference: {fileID: 0}
+    - target: {fileID: 3780481344537508875, guid: 02f4eccfed45cc0418c44946434ea42d,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.46000007
+      objectReference: {fileID: 0}
+    - target: {fileID: 3780481344537508875, guid: 02f4eccfed45cc0418c44946434ea42d,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.46000013
+      objectReference: {fileID: 0}
+    - target: {fileID: 3780481344537508875, guid: 02f4eccfed45cc0418c44946434ea42d,
+        type: 3}
       propertyPath: m_LocalPosition.x
-      value: -61.16
+      value: 1.4399538
       objectReference: {fileID: 0}
     - target: {fileID: 3780481344537508875, guid: 02f4eccfed45cc0418c44946434ea42d,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.3
+      value: -0.06550177
       objectReference: {fileID: 0}
     - target: {fileID: 3780481344537508875, guid: 02f4eccfed45cc0418c44946434ea42d,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -15.42
+      value: 0.07719752
       objectReference: {fileID: 0}
     - target: {fileID: 3780481344537508875, guid: 02f4eccfed45cc0418c44946434ea42d,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.9813488
+      value: 0.7576679
       objectReference: {fileID: 0}
     - target: {fileID: 3780481344537508875, guid: 02f4eccfed45cc0418c44946434ea42d,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.18606794
+      value: -0.05170116
       objectReference: {fileID: 0}
     - target: {fileID: 3780481344537508875, guid: 02f4eccfed45cc0418c44946434ea42d,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.030169433
+      value: 0.0006167001
       objectReference: {fileID: 0}
     - target: {fileID: 3780481344537508875, guid: 02f4eccfed45cc0418c44946434ea42d,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.0377227
+      value: 0.6505889
       objectReference: {fileID: 0}
     - target: {fileID: 3780481344537508875, guid: 02f4eccfed45cc0418c44946434ea42d,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 21.56
+      value: -4.54
       objectReference: {fileID: 0}
     - target: {fileID: 3780481344537508875, guid: 02f4eccfed45cc0418c44946434ea42d,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -2.784
+      value: -3.816
       objectReference: {fileID: 0}
     - target: {fileID: 3780481344537508875, guid: 02f4eccfed45cc0418c44946434ea42d,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 3.872
+      value: 81.455
+      objectReference: {fileID: 0}
+    - target: {fileID: 3780481344537508875, guid: 02f4eccfed45cc0418c44946434ea42d,
+        type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4556841744382453425, guid: 02f4eccfed45cc0418c44946434ea42d,
         type: 3}
@@ -3928,6 +3971,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3854494626747012541, guid: 3aa144a981d759847a6babe970f82b92,
     type: 3}
   m_PrefabInstance: {fileID: 873756763}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &880325847 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8429891933423561157, guid: b1cf30d2314423547af5dc64b593306a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1952449024}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &882417507 stripped
 GameObject:
@@ -4432,6 +4481,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1032234693}
   m_CullTransparentMesh: 1
+--- !u!4 &1079754241 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4202161213898340401, guid: b1cf30d2314423547af5dc64b593306a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1952449024}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1087596997
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5717,13 +5772,19 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1342544491}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &1348552370 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8692617945448068858, guid: a9ecc77aefcfae44abe1482d38e1cb51,
+    type: 3}
+  m_PrefabInstance: {fileID: 1665498208}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1357614762
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 445545189}
     m_Modifications:
     - target: {fileID: 6184867837980526772, guid: 69bb962872b4973449b0d2909ef9f6a3,
         type: 3}
@@ -5733,52 +5794,52 @@ PrefabInstance:
     - target: {fileID: 6818098177793659406, guid: 69bb962872b4973449b0d2909ef9f6a3,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -61.952
+      value: -0.099
       objectReference: {fileID: 0}
     - target: {fileID: 6818098177793659406, guid: 69bb962872b4973449b0d2909ef9f6a3,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 7.277
+      value: 1.378
       objectReference: {fileID: 0}
     - target: {fileID: 6818098177793659406, guid: 69bb962872b4973449b0d2909ef9f6a3,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -15.14
+      value: 0.007
       objectReference: {fileID: 0}
     - target: {fileID: 6818098177793659406, guid: 69bb962872b4973449b0d2909ef9f6a3,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.685431
+      value: 0.6614824
       objectReference: {fileID: 0}
     - target: {fileID: 6818098177793659406, guid: 69bb962872b4973449b0d2909ef9f6a3,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: -0.027506817
       objectReference: {fileID: 0}
     - target: {fileID: 6818098177793659406, guid: 69bb962872b4973449b0d2909ef9f6a3,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: -0.031725038
       objectReference: {fileID: 0}
     - target: {fileID: 6818098177793659406, guid: 69bb962872b4973449b0d2909ef9f6a3,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.7281376
+      value: 0.74878436
       objectReference: {fileID: 0}
     - target: {fileID: 6818098177793659406, guid: 69bb962872b4973449b0d2909ef9f6a3,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
+      value: 0.637
       objectReference: {fileID: 0}
     - target: {fileID: 6818098177793659406, guid: 69bb962872b4973449b0d2909ef9f6a3,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: -4.771
       objectReference: {fileID: 0}
     - target: {fileID: 6818098177793659406, guid: 69bb962872b4973449b0d2909ef9f6a3,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 93.461
+      value: 97.058
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6220,6 +6281,12 @@ MonoBehaviour:
   - {fileID: 0}
   _weakpointsHealth:
   - 1
+--- !u!4 &1490885436 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4354879515443511455, guid: b1cf30d2314423547af5dc64b593306a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1952449024}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1505251180
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7050,6 +7117,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a47e14d67fadb74a92b787929545868, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  count: {fileID: 0}
 --- !u!1001 &1577026746
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7728,7 +7796,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1079754241}
     m_Modifications:
     - target: {fileID: 8352401992029465664, guid: a9ecc77aefcfae44abe1482d38e1cb51,
         type: 3}
@@ -7738,58 +7806,64 @@ PrefabInstance:
     - target: {fileID: 8692617945448068858, guid: a9ecc77aefcfae44abe1482d38e1cb51,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -61.865
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8692617945448068858, guid: a9ecc77aefcfae44abe1482d38e1cb51,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6.052
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8692617945448068858, guid: a9ecc77aefcfae44abe1482d38e1cb51,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -14.485
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8692617945448068858, guid: a9ecc77aefcfae44abe1482d38e1cb51,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.510683
+      value: -0.079682
       objectReference: {fileID: 0}
     - target: {fileID: 8692617945448068858, guid: a9ecc77aefcfae44abe1482d38e1cb51,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.03652599
+      value: -0.08687879
       objectReference: {fileID: 0}
     - target: {fileID: 8692617945448068858, guid: a9ecc77aefcfae44abe1482d38e1cb51,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.8524651
+      value: -0.9930271
       objectReference: {fileID: 0}
     - target: {fileID: 8692617945448068858, guid: a9ecc77aefcfae44abe1482d38e1cb51,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.10569832
+      value: 0.000000010710207
       objectReference: {fileID: 0}
     - target: {fileID: 8692617945448068858, guid: a9ecc77aefcfae44abe1482d38e1cb51,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: -171.784
+      value: 0.793
       objectReference: {fileID: 0}
     - target: {fileID: 8692617945448068858, guid: a9ecc77aefcfae44abe1482d38e1cb51,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 62.561996
+      value: -189.106
       objectReference: {fileID: 0}
     - target: {fileID: 8692617945448068858, guid: a9ecc77aefcfae44abe1482d38e1cb51,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 170.096
+      value: 9.937
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a9ecc77aefcfae44abe1482d38e1cb51, type: 3}
+--- !u!4 &1685377567 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6818098177793659406, guid: 69bb962872b4973449b0d2909ef9f6a3,
+    type: 3}
+  m_PrefabInstance: {fileID: 1357614762}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1770489780
 GameObject:
   m_ObjectHideFlags: 0
@@ -8068,6 +8142,12 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &1793468913 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4212279399557489136, guid: b1cf30d2314423547af5dc64b593306a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1952449024}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1803530377
 GameObject:
   m_ObjectHideFlags: 0
@@ -8940,6 +9020,46 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 8579895573022935235}
     m_Modifications:
+    - target: {fileID: 218825609375620567, guid: b1cf30d2314423547af5dc64b593306a,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.59722626
+      objectReference: {fileID: 0}
+    - target: {fileID: 218825609375620567, guid: b1cf30d2314423547af5dc64b593306a,
+        type: 3}
+      propertyPath: m_Center.x
+      value: 0.0006208954
+      objectReference: {fileID: 0}
+    - target: {fileID: 218825609375620567, guid: b1cf30d2314423547af5dc64b593306a,
+        type: 3}
+      propertyPath: m_Center.y
+      value: 0.45463157
+      objectReference: {fileID: 0}
+    - target: {fileID: 218825609375620567, guid: b1cf30d2314423547af5dc64b593306a,
+        type: 3}
+      propertyPath: m_Center.z
+      value: 0.0007124875
+      objectReference: {fileID: 0}
+    - target: {fileID: 920066694906996574, guid: b1cf30d2314423547af5dc64b593306a,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.010048637
+      objectReference: {fileID: 0}
+    - target: {fileID: 920066694906996574, guid: b1cf30d2314423547af5dc64b593306a,
+        type: 3}
+      propertyPath: m_Center.x
+      value: -0.000000037417486
+      objectReference: {fileID: 0}
+    - target: {fileID: 920066694906996574, guid: b1cf30d2314423547af5dc64b593306a,
+        type: 3}
+      propertyPath: m_Center.y
+      value: 0.14187686
+      objectReference: {fileID: 0}
+    - target: {fileID: 920066694906996574, guid: b1cf30d2314423547af5dc64b593306a,
+        type: 3}
+      propertyPath: m_Center.z
+      value: -0.00019659098
+      objectReference: {fileID: 0}
     - target: {fileID: 2445386107242335851, guid: b1cf30d2314423547af5dc64b593306a,
         type: 3}
       propertyPath: m_IsActive
@@ -8955,6 +9075,21 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -0.71
       objectReference: {fileID: 0}
+    - target: {fileID: 4212279399557489136, guid: b1cf30d2314423547af5dc64b593306a,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.255
+      objectReference: {fileID: 0}
+    - target: {fileID: 4212279399557489136, guid: b1cf30d2314423547af5dc64b593306a,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.245
+      objectReference: {fileID: 0}
+    - target: {fileID: 5324247658035737989, guid: b1cf30d2314423547af5dc64b593306a,
+        type: 3}
+      propertyPath: m_InteractionManager
+      value: 
+      objectReference: {fileID: 1481671976548204324}
     - target: {fileID: 6050569118773129521, guid: b1cf30d2314423547af5dc64b593306a,
         type: 3}
       propertyPath: m_Name
@@ -9010,11 +9145,51 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7447854769092899044, guid: b1cf30d2314423547af5dc64b593306a,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.14457169
+      objectReference: {fileID: 0}
+    - target: {fileID: 7447854769092899044, guid: b1cf30d2314423547af5dc64b593306a,
+        type: 3}
+      propertyPath: m_Center.x
+      value: -0.00013333591
+      objectReference: {fileID: 0}
+    - target: {fileID: 7447854769092899044, guid: b1cf30d2314423547af5dc64b593306a,
+        type: 3}
+      propertyPath: m_Center.y
+      value: 0.04012814
+      objectReference: {fileID: 0}
+    - target: {fileID: 7447854769092899044, guid: b1cf30d2314423547af5dc64b593306a,
+        type: 3}
+      propertyPath: m_Center.z
+      value: -0.0028899903
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 2352422249421073149, guid: b1cf30d2314423547af5dc64b593306a, type: 3}
     - {fileID: 6094487825915581829, guid: b1cf30d2314423547af5dc64b593306a, type: 3}
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 4202161213898340401, guid: b1cf30d2314423547af5dc64b593306a,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1348552370}
+    - targetCorrespondingSourceObject: {fileID: 4212279399557489136, guid: b1cf30d2314423547af5dc64b593306a,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 664954206}
+    - targetCorrespondingSourceObject: {fileID: 4354879515443511455, guid: b1cf30d2314423547af5dc64b593306a,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 703780056}
+    - targetCorrespondingSourceObject: {fileID: 8582194383030469196, guid: b1cf30d2314423547af5dc64b593306a,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1685377567}
+    - targetCorrespondingSourceObject: {fileID: 8429891933423561157, guid: b1cf30d2314423547af5dc64b593306a,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7295888681721998193}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b1cf30d2314423547af5dc64b593306a, type: 3}
 --- !u!4 &1952449025 stripped
@@ -10062,7 +10237,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -10142,7 +10317,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896138}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -10529,7 +10704,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -10628,7 +10803,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896138}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -10825,7 +11000,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896138}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -11000,7 +11175,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -11038,7 +11213,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -11223,7 +11398,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896138}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -11243,28 +11418,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 3028370331856744595}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 108.056}
---- !u!114 &296245176639625090
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2763239682707896137}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2be4f1e73cffa2b4085dd4d7c9f5ac8b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spawnPositions:
-  - {fileID: 3227639525966809512}
-  - {fileID: 7995716242446221464}
-  - {fileID: 4577522812287287358}
-  prefabToSpawn:
-  - {fileID: 1294203356150005908, guid: de15e480c1f36b145a7eb1d706959bad, type: 3}
-  amount: 
-  position1: 0
-  position2: 0
-  position3: 0
 --- !u!23 &297144188677479980
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -11414,7 +11567,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -11591,7 +11744,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -11710,7 +11863,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896138}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -11768,7 +11921,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -12138,7 +12291,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -12339,7 +12492,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -12392,7 +12545,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -12468,7 +12621,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -12533,7 +12686,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896138}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -12680,7 +12833,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -12718,7 +12871,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896138}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -12736,7 +12889,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -12770,7 +12923,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896138}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -13040,7 +13193,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -13162,7 +13315,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -13548,7 +13701,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -13861,7 +14014,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -14038,7 +14191,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -14409,7 +14562,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -14449,7 +14602,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -14612,7 +14765,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -14777,7 +14930,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896138}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -15152,7 +15305,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896138}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -15207,7 +15360,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -15270,7 +15423,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -15310,7 +15463,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -15343,7 +15496,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -15361,7 +15514,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -15513,7 +15666,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -15605,7 +15758,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896138}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -15681,7 +15834,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -15791,7 +15944,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -15871,7 +16024,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896138}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -15976,7 +16129,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -16009,7 +16162,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -16612,7 +16765,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -16645,7 +16798,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -16847,7 +17000,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -17064,7 +17217,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -17133,7 +17286,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -17352,7 +17505,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -17385,7 +17538,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -17433,7 +17586,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -17488,7 +17641,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -17581,7 +17734,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -17883,7 +18036,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -18119,7 +18272,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -18306,7 +18459,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896138}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -18522,7 +18675,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896138}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -18582,7 +18735,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -18778,7 +18931,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -18973,7 +19126,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -19007,7 +19160,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -19025,7 +19178,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -19073,7 +19226,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -19142,7 +19295,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -19180,7 +19333,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -19198,7 +19351,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -19353,7 +19506,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -19393,7 +19546,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -19411,7 +19564,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -19479,7 +19632,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -19497,7 +19650,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -19515,7 +19668,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -19575,7 +19728,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -19676,7 +19829,7 @@ PrefabInstance:
         type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 2763239682707896137}
+      objectReference: {fileID: 0}
     - target: {fileID: 1379112930820372033, guid: de15e480c1f36b145a7eb1d706959bad,
         type: 3}
       propertyPath: feetSpeed
@@ -19897,7 +20050,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -19974,7 +20127,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896138}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -20110,7 +20263,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896138}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -20376,7 +20529,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -20609,7 +20762,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -20627,7 +20780,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896138}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -20683,7 +20836,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896138}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -20982,7 +21135,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -21045,7 +21198,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -21078,7 +21231,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -21096,7 +21249,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -21218,7 +21371,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -21298,7 +21451,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896138}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -21452,7 +21605,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -21607,7 +21760,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -21655,7 +21808,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896138}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -21808,7 +21961,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -22406,7 +22559,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896138}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -22444,7 +22597,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896138}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -22462,7 +22615,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -22627,7 +22780,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -22687,7 +22840,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896138}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -22784,7 +22937,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -22896,13 +23049,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4032947193652965499}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 51.456997, y: -48.313354, z: -134.01984}
+  m_LocalRotation: {x: -0, y: 0.675621, z: -0, w: 0.7372492}
+  m_LocalPosition: {x: 111.09989, y: -49.276, z: -153.95457}
   m_LocalScale: {x: 0.03, y: 0.03, z: 0.03}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 8579895573022935235}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 85.005, z: 0}
 --- !u!4 &2609954659979999709
 Transform:
   m_ObjectHideFlags: 0
@@ -23026,7 +23179,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -23271,7 +23424,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -23403,7 +23556,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -23633,7 +23786,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896138}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -23755,7 +23908,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -23828,7 +23981,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896138}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -23896,7 +24049,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -23963,167 +24116,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1001 &2763239682707896136
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 8579895573022935235}
-    m_Modifications:
-    - target: {fileID: 2659039616246823065, guid: 99679a6b3d33fbb4a8eece0e5ae65412,
-        type: 3}
-      propertyPath: m_Material
-      value: 
-      objectReference: {fileID: 13400000, guid: 1b52f03f330356f4eacf4a8b077b33f0,
-        type: 2}
-    - target: {fileID: 2659039616246823065, guid: 99679a6b3d33fbb4a8eece0e5ae65412,
-        type: 3}
-      propertyPath: m_ExcludeLayers.m_Bits
-      value: 72
-      objectReference: {fileID: 0}
-    - target: {fileID: 3338511765567839196, guid: 99679a6b3d33fbb4a8eece0e5ae65412,
-        type: 3}
-      propertyPath: m_EnableFly
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3339374363210591357, guid: 99679a6b3d33fbb4a8eece0e5ae65412,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 49.550407
-      objectReference: {fileID: 0}
-    - target: {fileID: 3339374363210591357, guid: 99679a6b3d33fbb4a8eece0e5ae65412,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -49.299694
-      objectReference: {fileID: 0}
-    - target: {fileID: 3339374363210591357, guid: 99679a6b3d33fbb4a8eece0e5ae65412,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -137.08983
-      objectReference: {fileID: 0}
-    - target: {fileID: 3339374363210591357, guid: 99679a6b3d33fbb4a8eece0e5ae65412,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3339374363210591357, guid: 99679a6b3d33fbb4a8eece0e5ae65412,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3339374363210591357, guid: 99679a6b3d33fbb4a8eece0e5ae65412,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3339374363210591357, guid: 99679a6b3d33fbb4a8eece0e5ae65412,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3339374363210591357, guid: 99679a6b3d33fbb4a8eece0e5ae65412,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3339374363210591357, guid: 99679a6b3d33fbb4a8eece0e5ae65412,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3339374363210591357, guid: 99679a6b3d33fbb4a8eece0e5ae65412,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3546753643702723941, guid: 99679a6b3d33fbb4a8eece0e5ae65412,
-        type: 3}
-      propertyPath: m_ExcludeLayers.m_Bits
-      value: 16254
-      objectReference: {fileID: 0}
-    - target: {fileID: 4814640080981590021, guid: 99679a6b3d33fbb4a8eece0e5ae65412,
-        type: 3}
-      propertyPath: m_ExcludeLayers.m_Bits
-      value: 72
-      objectReference: {fileID: 0}
-    - target: {fileID: 5212050896282384707, guid: 99679a6b3d33fbb4a8eece0e5ae65412,
-        type: 3}
-      propertyPath: m_Mass
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 5212050896282384707, guid: 99679a6b3d33fbb4a8eece0e5ae65412,
-        type: 3}
-      propertyPath: m_ExcludeLayers.m_Bits
-      value: 15998
-      objectReference: {fileID: 0}
-    - target: {fileID: 5255989073781699065, guid: 99679a6b3d33fbb4a8eece0e5ae65412,
-        type: 3}
-      propertyPath: m_Mass
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 5255989073781699065, guid: 99679a6b3d33fbb4a8eece0e5ae65412,
-        type: 3}
-      propertyPath: m_ExcludeLayers.m_Bits
-      value: 15998
-      objectReference: {fileID: 0}
-    - target: {fileID: 6285564988479229389, guid: 99679a6b3d33fbb4a8eece0e5ae65412,
-        type: 3}
-      propertyPath: m_Mass
-      value: 10000
-      objectReference: {fileID: 0}
-    - target: {fileID: 6285564988479229389, guid: 99679a6b3d33fbb4a8eece0e5ae65412,
-        type: 3}
-      propertyPath: m_UseGravity
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6285564988479229389, guid: 99679a6b3d33fbb4a8eece0e5ae65412,
-        type: 3}
-      propertyPath: m_ExcludeLayers.m_Bits
-      value: 2147499902
-      objectReference: {fileID: 0}
-    - target: {fileID: 6371904844937808468, guid: 99679a6b3d33fbb4a8eece0e5ae65412,
-        type: 3}
-      propertyPath: m_ExcludeLayers.m_Bits
-      value: 72
-      objectReference: {fileID: 0}
-    - target: {fileID: 8447819882725403660, guid: 99679a6b3d33fbb4a8eece0e5ae65412,
-        type: 3}
-      propertyPath: m_Name
-      value: Physics Rig
-      objectReference: {fileID: 0}
-    - target: {fileID: 8447819882725403660, guid: 99679a6b3d33fbb4a8eece0e5ae65412,
-        type: 3}
-      propertyPath: m_TagString
-      value: Player
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8447819882725403660, guid: 99679a6b3d33fbb4a8eece0e5ae65412,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 296245176639625090}
-  m_SourcePrefab: {fileID: 100100000, guid: 99679a6b3d33fbb4a8eece0e5ae65412, type: 3}
---- !u!1 &2763239682707896137 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8447819882725403660, guid: 99679a6b3d33fbb4a8eece0e5ae65412,
-    type: 3}
-  m_PrefabInstance: {fileID: 2763239682707896136}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &2763239682707896138 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2887424351128444622, guid: 99679a6b3d33fbb4a8eece0e5ae65412,
-    type: 3}
-  m_PrefabInstance: {fileID: 2763239682707896136}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &2763239682707896139 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 3339374363210591357, guid: 99679a6b3d33fbb4a8eece0e5ae65412,
-    type: 3}
-  m_PrefabInstance: {fileID: 2763239682707896136}
-  m_PrefabAsset: {fileID: 0}
 --- !u!33 &2766475356594334684
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -24200,7 +24192,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -24462,7 +24454,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -24811,7 +24803,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -24871,7 +24863,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -24939,7 +24931,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -25315,7 +25307,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -25419,7 +25411,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -25553,7 +25545,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -25686,7 +25678,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -25841,7 +25833,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -25968,7 +25960,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -26016,7 +26008,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -26139,7 +26131,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -26320,7 +26312,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -26493,13 +26485,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3201254275045893340}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 51.668, y: -48.313354, z: -134.01984}
+  m_LocalRotation: {x: -0, y: 0.675621, z: -0, w: 0.7372492}
+  m_LocalPosition: {x: 111.11826, y: -49.276, z: -154.16478}
   m_LocalScale: {x: 0.03, y: 0.03, z: 0.03}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 8579895573022935235}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 85.005, z: 0}
 --- !u!1183024399 &3237755361529769836
 LookAtConstraint:
   m_ObjectHideFlags: 0
@@ -26513,7 +26505,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -26539,7 +26531,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -26572,7 +26564,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -26788,7 +26780,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -26821,7 +26813,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -27440,7 +27432,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -27493,7 +27485,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -27798,7 +27790,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -27831,7 +27823,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -27891,7 +27883,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -27939,7 +27931,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896138}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -28032,7 +28024,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -28080,7 +28072,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -28098,7 +28090,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -28220,7 +28212,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -28288,7 +28280,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -28334,7 +28326,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896138}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -28488,7 +28480,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896138}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -28823,7 +28815,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -28841,7 +28833,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -28961,7 +28953,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -28979,7 +28971,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -29141,7 +29133,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -29194,7 +29186,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -29292,7 +29284,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896138}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -29533,7 +29525,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -29715,7 +29707,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -29897,7 +29889,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896138}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -30608,7 +30600,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -30691,7 +30683,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -30732,7 +30724,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -30787,7 +30779,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -31046,7 +31038,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -31072,7 +31064,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896138}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -31090,7 +31082,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -31289,7 +31281,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896138}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -31811,7 +31803,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -31901,7 +31893,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -32098,7 +32090,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -32173,7 +32165,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -32269,7 +32261,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896138}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -32518,7 +32510,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -32593,7 +32585,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896138}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -32611,7 +32603,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -32694,7 +32686,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896138}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -32727,7 +32719,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -32865,7 +32857,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -32925,7 +32917,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -33005,7 +32997,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -33079,7 +33071,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -33191,7 +33183,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -33245,7 +33237,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -33263,7 +33255,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -33547,7 +33539,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -33565,7 +33557,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -33591,7 +33583,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -33629,7 +33621,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896138}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -33853,7 +33845,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -33933,7 +33925,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -34239,7 +34231,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896138}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -34279,7 +34271,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -34312,7 +34304,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -34380,7 +34372,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896138}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -34478,7 +34470,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -34602,7 +34594,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896138}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -35131,7 +35123,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -35354,7 +35346,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -35484,7 +35476,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -35544,7 +35536,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -35723,7 +35715,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -35977,7 +35969,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -36068,7 +36060,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -36168,7 +36160,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -36500,7 +36492,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -36534,7 +36526,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -36574,7 +36566,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -36592,7 +36584,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -36670,7 +36662,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -36688,7 +36680,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -36714,7 +36706,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -36822,7 +36814,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -36863,7 +36855,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -36881,7 +36873,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -36899,7 +36891,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -37036,7 +37028,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -37217,7 +37209,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896138}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -37336,7 +37328,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -37517,7 +37509,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -37592,7 +37584,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -37610,7 +37602,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896138}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -37628,7 +37620,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -37646,7 +37638,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -37664,7 +37656,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -37704,7 +37696,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -37722,7 +37714,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -37798,7 +37790,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -37902,7 +37894,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -38055,7 +38047,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896138}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -38088,7 +38080,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -38404,7 +38396,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -38506,7 +38498,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896138}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -38544,7 +38536,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -38582,7 +38574,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896138}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -39060,7 +39052,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -39262,7 +39254,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -39340,7 +39332,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -39374,7 +39366,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -39437,7 +39429,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896138}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -39497,7 +39489,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -39629,7 +39621,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896138}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -39647,7 +39639,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -39665,7 +39657,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -39815,7 +39807,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -39833,7 +39825,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -39873,7 +39865,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896138}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -39951,7 +39943,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -40106,7 +40098,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -40529,7 +40521,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896138}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -40644,7 +40636,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896138}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -40670,7 +40662,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -40889,7 +40881,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -40927,7 +40919,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -41017,7 +41009,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -41057,7 +41049,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -41160,7 +41152,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -41344,7 +41336,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -41543,7 +41535,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -41561,7 +41553,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -42281,7 +42273,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896138}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -42356,7 +42348,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -42374,7 +42366,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -42392,7 +42384,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -42418,7 +42410,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -42594,7 +42586,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -42627,7 +42619,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896138}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -42645,7 +42637,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -42663,7 +42655,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896138}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -42724,7 +42716,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -42742,7 +42734,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -42825,7 +42817,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -42988,7 +42980,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -43112,7 +43104,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -43250,7 +43242,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -43268,7 +43260,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -43497,7 +43489,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -43679,7 +43671,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -43697,7 +43689,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -43900,7 +43892,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -43918,7 +43910,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -44099,7 +44091,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -44147,7 +44139,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -44165,7 +44157,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -44526,7 +44518,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -44566,7 +44558,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -44645,7 +44637,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -44769,7 +44761,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -44831,7 +44823,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896138}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -44948,7 +44940,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -45281,7 +45273,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -45488,7 +45480,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -45592,7 +45584,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896138}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -45610,7 +45602,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896138}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -45695,7 +45687,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -45713,7 +45705,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -45843,7 +45835,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -45923,7 +45915,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896138}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -46047,7 +46039,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -46065,7 +46057,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -46151,7 +46143,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -46217,7 +46209,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -46607,7 +46599,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896138}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -46726,7 +46718,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -46794,7 +46786,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -46884,7 +46876,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -47188,7 +47180,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896138}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -47605,7 +47597,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896138}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -47818,7 +47810,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896138}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -47836,7 +47828,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -47917,7 +47909,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 8579895573022935235}
+    m_TransformParent: {fileID: 880325847}
     m_Modifications:
     - target: {fileID: 245612047267629738, guid: f4cd092d6076c724cb2e600cec5e5d19,
         type: 3}
@@ -47987,52 +47979,52 @@ PrefabInstance:
     - target: {fileID: 7780804198054516057, guid: f4cd092d6076c724cb2e600cec5e5d19,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 118.94
+      value: -0.063
       objectReference: {fileID: 0}
     - target: {fileID: 7780804198054516057, guid: f4cd092d6076c724cb2e600cec5e5d19,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -49.25
+      value: 0.016
       objectReference: {fileID: 0}
     - target: {fileID: 7780804198054516057, guid: f4cd092d6076c724cb2e600cec5e5d19,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -156.614
+      value: -0.228
       objectReference: {fileID: 0}
     - target: {fileID: 7780804198054516057, guid: f4cd092d6076c724cb2e600cec5e5d19,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.7158525
+      value: 0.67481256
       objectReference: {fileID: 0}
     - target: {fileID: 7780804198054516057, guid: f4cd092d6076c724cb2e600cec5e5d19,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.69825155
+      value: 0.0060273046
       objectReference: {fileID: 0}
     - target: {fileID: 7780804198054516057, guid: f4cd092d6076c724cb2e600cec5e5d19,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0.06178166
       objectReference: {fileID: 0}
     - target: {fileID: 7780804198054516057, guid: f4cd092d6076c724cb2e600cec5e5d19,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0.735374
       objectReference: {fileID: 0}
     - target: {fileID: 7780804198054516057, guid: f4cd092d6076c724cb2e600cec5e5d19,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 88.574
+      value: -4.746
       objectReference: {fileID: 0}
     - target: {fileID: 7780804198054516057, guid: f4cd092d6076c724cb2e600cec5e5d19,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: 5.311
       objectReference: {fileID: 0}
     - target: {fileID: 7780804198054516057, guid: f4cd092d6076c724cb2e600cec5e5d19,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
+      value: 94.698
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -48479,7 +48471,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -48497,7 +48489,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -48661,7 +48653,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -48729,7 +48721,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896138}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -49011,7 +49003,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -49104,7 +49096,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -49227,7 +49219,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -49379,7 +49371,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -49447,7 +49439,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896138}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -49670,7 +49662,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -49716,7 +49708,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896138}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -49866,7 +49858,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -49953,7 +49945,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896138}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -50053,7 +50045,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -50071,7 +50063,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -50119,7 +50111,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -50454,7 +50446,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -50494,7 +50486,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -50549,7 +50541,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -50679,7 +50671,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -50749,7 +50741,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -51149,7 +51141,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -51608,7 +51600,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896138}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -51654,7 +51646,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -51758,7 +51750,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -52116,7 +52108,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -52206,7 +52198,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -52870,13 +52862,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 695045560913218193}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 51.545998, y: -48.313354, z: -134.01984}
+  m_LocalRotation: {x: -0, y: 0.675621, z: -0, w: 0.7372492}
+  m_LocalPosition: {x: 111.10756, y: -49.276, z: -154.04314}
   m_LocalScale: {x: 0.03, y: 0.03, z: 0.03}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 8579895573022935235}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 85.005, z: 0}
 --- !u!1 &8226142435502408021
 GameObject:
   m_ObjectHideFlags: 0
@@ -53022,7 +53014,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -53105,7 +53097,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -53222,7 +53214,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -53240,7 +53232,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -53457,7 +53449,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -53490,7 +53482,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896138}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -53977,7 +53969,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -54191,7 +54183,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896138}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -54475,7 +54467,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -54671,7 +54663,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -54740,14 +54732,12 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4984983284495496252}
-  - {fileID: 2763239682707896139}
   - {fileID: 6356041049812668413}
   - {fileID: 2395341389573133580}
   - {fileID: 1291756788056511711}
   - {fileID: 2607593829671308867}
   - {fileID: 8223293425745650517}
   - {fileID: 3237172553710820994}
-  - {fileID: 7295888681721998193}
   - {fileID: 7076943204530302414}
   - {fileID: 1952449025}
   - {fileID: 2056433339291809395}
@@ -54835,7 +54825,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -54912,7 +54902,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896138}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -55000,7 +54990,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896138}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -55268,7 +55258,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896138}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -55286,7 +55276,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -55304,7 +55294,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896138}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -55459,7 +55449,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -55686,7 +55676,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -55719,7 +55709,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -55767,7 +55757,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -56160,7 +56150,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -56220,7 +56210,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -56309,7 +56299,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -56327,7 +56317,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -56345,7 +56335,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -56776,7 +56766,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -56814,7 +56804,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -56854,7 +56844,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -56872,7 +56862,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -57097,7 +57087,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896138}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -57173,7 +57163,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -57348,7 +57338,7 @@ LookAtConstraint:
   m_RotationAtRest: {x: 0, y: 0, z: 0}
   m_RotationOffset: {x: 0, y: 0, z: 0}
   m_Roll: 0
-  m_WorldUpObject: {fileID: 2763239682707896139}
+  m_WorldUpObject: {fileID: 0}
   m_UseUpObject: 1
   m_Active: 1
   m_IsLocked: 0
@@ -57704,7 +57694,3 @@ SceneRoots:
   - {fileID: 1187450164}
   - {fileID: 1989820675}
   - {fileID: 8579895573022935235}
-  - {fileID: 1665498208}
-  - {fileID: 1357614762}
-  - {fileID: 813754131}
-  - {fileID: 389091498}
