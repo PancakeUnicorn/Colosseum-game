@@ -12,6 +12,11 @@ public class UIManager : MonoBehaviour
     public bool readyToSpawn;
     public Transform player;
     public Transform spawnPosition;
+    public bool testUp;
+    public bool testDown;
+    public bool testNext;
+    public bool testPrevious;
+    public bool testSpawn;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,24 +30,28 @@ public class UIManager : MonoBehaviour
     }
     private void OnCollisionEnter(Collision collision)
     {   
-        if(collision.collider.tag == "ButtonUp")
+        if(collision.collider.tag == "ButtonUp" || testUp)
         {
             spawner.amount += 1;
         }
-        if(collision.collider.tag == "ButtonDown")
+        if(collision.collider.tag == "ButtonDown"|| testDown)
         {
             spawner.amount -= 1;
         }
-        if(collision.collider.tag == "Continue")
+        if(collision.collider.tag == "Continue" || testNext)
         {
             botAmount.SetActive(false);
             panelPickWeapon.SetActive(true);
             readyToSpawn = true;
         }
-        if(collision.collider.tag == "Continue" && readyToSpawn)
+        if(collision.collider.tag == "Continue" && readyToSpawn|| testSpawn)
         {
             player.transform.position = spawnPosition.position;
         }
-        i
+        if(collision.collider.tag == "Previous"|| testPrevious)
+        {
+            panelPickWeapon.SetActive(false);
+            botAmount.SetActive(true);
+        }
     }
 }
