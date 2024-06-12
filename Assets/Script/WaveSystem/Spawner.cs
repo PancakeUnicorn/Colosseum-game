@@ -6,7 +6,7 @@ public class Spawner : MonoBehaviour
 {
     public Transform[] spawnPositions;
     public GameObject[] prefabToSpawn;
-    public int[] amount;
+    public int amount;
     public bool position1,position2,position3;
     // Start is called before the first frame update
     void Start()
@@ -30,6 +30,14 @@ public class Spawner : MonoBehaviour
         var spawn = Random.Range(0, spawnPositions.Length);
 
         Instantiate(prefabToSpawn[enemy], spawnPositions[spawn].position, Quaternion.identity);
+        
     }
+    public void TakeEnemyOutOfList()
+    {
 
+    }
+    public void SetEmemyInList()
+    {
+
+    }
 }
