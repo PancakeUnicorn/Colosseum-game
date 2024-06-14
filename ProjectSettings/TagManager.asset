@@ -15,6 +15,7 @@ TagManager:
   - Right
   - Left
   - FireTrap
+  - BodyPart
   layers:
   - Default
   - TransparentFX

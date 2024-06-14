@@ -4,67 +4,42 @@ using UnityEngine;
 
 public class Magic : MonoBehaviour
 {
-    public string _name;
-    public string _discription;
+    public float _damage;
 
-    public float _summonForge;
-    public float _summonDelay;
-    public GameObject _magicObject;
+    public bool _fire;
+    public Material _iceMaterial;
 
-    bool _holdingL;
-    bool _holdingR;
+    public GameObject _hitSpawn;
 
-    bool _canSummon;
-
-    Vector3 _direction;
-
-    XRIDefaultInputActions _input;
-
-    Vector3 _speed;
-
-    private void Awake()
+    private void OnCollisionEnter(Collision collision)
     {
-        _input = new XRIDefaultInputActions();
-    }
-
-    private void Start()
-    {
-        _canSummon = true;
-    }
-                                                                       
-    private void FixedUpdate()
-    {
-        if (_speed.x >= _summonForge && _canSummon)
+        if(collision.gameObject.layer == 8)
         {
-            Quaternion _lastDirection = new Quaternion(_direction.x, _direction.y, _direction.z, 0);
-            Instantiate(_magicObject, transform.position, _lastDirection);
+            collision.gameObject.GetComponentInParent<Health>().lifePoints -= _damage;
 
-            _canSummon = false;
-            StartCoroutine(Delay());
+            if (_fire)
+            {
+                //collision.gameObject.GetComponentInParent<Rigidbody>().AddExplosionForce(50,)
+
+                ParticleSystem fire = collision.gameObject.GetComponentInParent<TestTargetRotation>().GetComponentInChildren<ParticleSystem>();
+                if (fire != null)
+                {
+                    fire.Play();
+                }
+            }
+
+            else
+            {
+                collision.gameObject.GetComponentInParent<RaggdollHit>()._weakPointGameObect._head.GetComponent<SkinnedMeshRenderer>().materials[1].SetColor("_EmissionColor", Color.clear);
+                collision.gameObject.GetComponentInParent<RaggdollHit>()._weakPointGameObect._armL.GetComponent<SkinnedMeshRenderer>().materials[1].SetColor("_EmissionColor", Color.clear);
+                collision.gameObject.GetComponentInParent<RaggdollHit>()._weakPointGameObect._armR.GetComponent<SkinnedMeshRenderer>().materials[1].SetColor("_EmissionColor", Color.clear);
+                collision.gameObject.GetComponentInParent<RaggdollHit>()._weakPointGameObect._leggL.GetComponent<SkinnedMeshRenderer>().materials[1].SetColor("_EmissionColor", Color.clear);
+                collision.gameObject.GetComponentInParent<RaggdollHit>()._weakPointGameObect._leggR.GetComponent<SkinnedMeshRenderer>().materials[1].SetColor("_EmissionColor", Color.clear);
+            }
         }
-    }
 
-    IEnumerator Delay()
-    {
-        yield return new WaitForSeconds(_summonDelay);
+        Instantiate(_hitSpawn, transform.position, transform.rotation);
 
-        _canSummon = true;
-    }
-
-    private void OnCollisionStay(Collision collision)
-    {
-        _direction = collision.transform.forward;
-
-        //if(collision.transform.tag == "Left")
-        //{
-        //    _holdingL = true;
-        //    _holdingR = false;
-        //}
-
-        //else if (collision.transform.tag == "Right")
-        //{
-        //    _holdingL = false;
-        //    _holdingR = true;
-        //}
+        Destroy(gameObject);
     }
 }
