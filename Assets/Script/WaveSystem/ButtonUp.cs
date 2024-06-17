@@ -10,7 +10,15 @@ public class ButtonUp : MonoBehaviour
     {
         if (other.tag == "Left"|| other.tag =="Right")
         {
-            spawner.amount += 1;
+            if (spawner.amount <= 6)
+            {
+                spawner.amount += 1;
+            }
+            else
+            {
+                spawner.amount = 6;
+            }
+
         }
 
 

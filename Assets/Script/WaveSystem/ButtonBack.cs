@@ -12,10 +12,11 @@ public class ButtonBack : MonoBehaviour
 
     public bool testPrevious;
  
+   
     public void OnTriggerEnter(Collider other)
     {
         // previous button
-        if (other.tag == "Left" || other.tag == "Right")
+        if (other.CompareTag("Left")  || other.CompareTag("Right"))
         {
             panelPickWeapon.SetActive(false);
             botAmount.SetActive(true);

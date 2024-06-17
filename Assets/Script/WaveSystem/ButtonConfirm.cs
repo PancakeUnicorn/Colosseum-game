@@ -9,8 +9,9 @@ public class ButtonConfirm : MonoBehaviour
     public bool readyToSpawn;
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Left" || other.tag == "Right")
+        if (other.CompareTag("Left") || other.CompareTag("Right"))
         {
+            Debug.Log("Button is Pressed");
             botAmount.SetActive(false);
             panelPickWeapon.SetActive(true);
             readyToSpawn = true;

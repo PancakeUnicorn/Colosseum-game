@@ -33,7 +33,7 @@ public class TutoriolColl : MonoBehaviour
             {
                 await Task.Delay((int)_audio.length * 1000);
                 _gateAni.SetBool("Exit", true);
-                _vignette.intensity.value = 2;
+                //_vignette.intensity.value = 2;
             }
         }
     }
