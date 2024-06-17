@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class RotateTrap : MonoBehaviour
 {
+    public Collider onHitCollider;
     public TestTargetRotation targetRotation;
     public float speed;
     public float treshold;
@@ -42,12 +43,13 @@ public class RotateTrap : MonoBehaviour
         
         if(activateTrap)
         {
-
+            onHitCollider.enabled = true;
             particle.SetActive(true);
             transform.Rotate(Vector3.up * speed * Time.deltaTime);
         }
         else
         {
+            onHitCollider.enabled = false;
             StopCoroutine(TimerTrap(trapTime));
             particle.SetActive(false);
         }
