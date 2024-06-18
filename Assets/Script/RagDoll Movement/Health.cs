@@ -16,7 +16,7 @@ public class Health : MonoBehaviour
     public Material burned;
 
     public List<GameObject> _spawnedParts;
-    void Start()
+    void Awake()
     {
         rigidbodies = gameObject.GetComponentsInChildren<Rigidbody>();
         joints = gameObject.GetComponentsInChildren<ConfigurableJoint>();

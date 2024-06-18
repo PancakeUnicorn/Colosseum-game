@@ -14,7 +14,8 @@ public class ButtonDown : MonoBehaviour
     {
         if (other.CompareTag("Left") || other.CompareTag("Right"))
         {
-            if (spawner.amount <= 6) 
+           
+            if (spawner.amount <= 6 && spawner.amount !<= 0) 
             {
                 spawner.amount -= 1;
             }

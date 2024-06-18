@@ -7,7 +7,7 @@ public class PlayerinArena : MonoBehaviour
     public Spawner spawner;
     public void OnTriggerEnter(Collider other)
     {
-        if(other.CompareTag("Player"))
+        if(other.CompareTag("Body"))
         {
             spawner.playerInArena = true;
         }
