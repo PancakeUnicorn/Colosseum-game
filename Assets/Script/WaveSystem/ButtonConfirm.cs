@@ -5,16 +5,26 @@ using UnityEngine;
 public class ButtonConfirm : MonoBehaviour
 {
     public GameObject player;
+    public GameObject teleporter;
     public GameObject botAmount;
     public GameObject panelPickWeapon;
     public Transform spawnInArena;
-    public bool readyToSpawn = false, hasSpawned;
+    public bool readyToSpawn = false, hasSpawned, teleporterActive;
     public void Update()
     {
         if (readyToSpawn)
         {
-            player.transform.position = spawnInArena.position;
+            teleporterActive = true;
             hasSpawned = true;
+        }
+
+        if (teleporterActive) 
+        {
+            teleporter.SetActive(true);
+        }
+        else
+        {
+            teleporter.SetActive(false);
         }
         if (hasSpawned) 
         {
@@ -33,4 +43,5 @@ public class ButtonConfirm : MonoBehaviour
 
         }
     }
+
 }

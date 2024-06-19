@@ -17,6 +17,8 @@ TagManager:
   - FireTrap
   - BodyPart
   - Body
+  - Boxing
+  - PlayerTarget
   layers:
   - Default
   - TransparentFX

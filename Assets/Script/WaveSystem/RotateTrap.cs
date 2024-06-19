@@ -29,7 +29,7 @@ public class RotateTrap : MonoBehaviour
         if (time >= timeTreshHold) 
         {
             randomNumber = GetRandomNumber();
-            Debug.Log(randomNumber);
+           
             time -= time;
         }
        

@@ -474,6 +474,15 @@ public partial class @XRIDefaultInputActions: IInputActionCollection2, IDisposab
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""Velocity"",
+                    ""type"": ""Value"",
+                    ""id"": ""5c9e9de1-6295-4681-86f4-7430e99edd20"",
+                    ""expectedControlType"": ""Vector3"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
                 }
             ],
             ""bindings"": [
@@ -716,6 +725,17 @@ public partial class @XRIDefaultInputActions: IInputActionCollection2, IDisposab
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""speed"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""639108ec-3711-4ede-bdb7-6683fd93b159"",
+                    ""path"": ""<XRController>{LeftHand}/deviceVelocity"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Velocity"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -1290,6 +1310,15 @@ public partial class @XRIDefaultInputActions: IInputActionCollection2, IDisposab
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""Velocity"",
+                    ""type"": ""Value"",
+                    ""id"": ""f0a83e54-2270-4d5d-aa6f-d7bbb9659802"",
+                    ""expectedControlType"": ""Vector3"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
                 }
             ],
             ""bindings"": [
@@ -1532,6 +1561,17 @@ public partial class @XRIDefaultInputActions: IInputActionCollection2, IDisposab
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""speed"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""bd12672b-9066-4577-be24-aa7ddad034b9"",
+                    ""path"": ""<XRController>{RightHand}/deviceVelocity"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Velocity"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -2751,6 +2791,7 @@ public partial class @XRIDefaultInputActions: IInputActionCollection2, IDisposab
         m_XRILeftHand_GripPosition = m_XRILeftHand.FindAction("Grip Position", throwIfNotFound: true);
         m_XRILeftHand_GripRotation = m_XRILeftHand.FindAction("Grip Rotation", throwIfNotFound: true);
         m_XRILeftHand_speed = m_XRILeftHand.FindAction("speed", throwIfNotFound: true);
+        m_XRILeftHand_Velocity = m_XRILeftHand.FindAction("Velocity", throwIfNotFound: true);
         // XRI LeftHand Interaction
         m_XRILeftHandInteraction = asset.FindActionMap("XRI LeftHand Interaction", throwIfNotFound: true);
         m_XRILeftHandInteraction_Select = m_XRILeftHandInteraction.FindAction("Select", throwIfNotFound: true);
@@ -2790,6 +2831,7 @@ public partial class @XRIDefaultInputActions: IInputActionCollection2, IDisposab
         m_XRIRightHand_PokeRotation = m_XRIRightHand.FindAction("Poke Rotation", throwIfNotFound: true);
         m_XRIRightHand_GripPosition = m_XRIRightHand.FindAction("Grip Position", throwIfNotFound: true);
         m_XRIRightHand_GripRotation = m_XRIRightHand.FindAction("Grip Rotation", throwIfNotFound: true);
+        m_XRIRightHand_Velocity = m_XRIRightHand.FindAction("Velocity", throwIfNotFound: true);
         // XRI RightHand Interaction
         m_XRIRightHandInteraction = asset.FindActionMap("XRI RightHand Interaction", throwIfNotFound: true);
         m_XRIRightHandInteraction_Select = m_XRIRightHandInteraction.FindAction("Select", throwIfNotFound: true);
@@ -3011,6 +3053,7 @@ public partial class @XRIDefaultInputActions: IInputActionCollection2, IDisposab
     private readonly InputAction m_XRILeftHand_GripPosition;
     private readonly InputAction m_XRILeftHand_GripRotation;
     private readonly InputAction m_XRILeftHand_speed;
+    private readonly InputAction m_XRILeftHand_Velocity;
     public struct XRILeftHandActions
     {
         private @XRIDefaultInputActions m_Wrapper;
@@ -3029,6 +3072,7 @@ public partial class @XRIDefaultInputActions: IInputActionCollection2, IDisposab
         public InputAction @GripPosition => m_Wrapper.m_XRILeftHand_GripPosition;
         public InputAction @GripRotation => m_Wrapper.m_XRILeftHand_GripRotation;
         public InputAction @speed => m_Wrapper.m_XRILeftHand_speed;
+        public InputAction @Velocity => m_Wrapper.m_XRILeftHand_Velocity;
         public InputActionMap Get() { return m_Wrapper.m_XRILeftHand; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -3080,6 +3124,9 @@ public partial class @XRIDefaultInputActions: IInputActionCollection2, IDisposab
             @speed.started += instance.OnSpeed;
             @speed.performed += instance.OnSpeed;
             @speed.canceled += instance.OnSpeed;
+            @Velocity.started += instance.OnVelocity;
+            @Velocity.performed += instance.OnVelocity;
+            @Velocity.canceled += instance.OnVelocity;
         }
 
         private void UnregisterCallbacks(IXRILeftHandActions instance)
@@ -3126,6 +3173,9 @@ public partial class @XRIDefaultInputActions: IInputActionCollection2, IDisposab
             @speed.started -= instance.OnSpeed;
             @speed.performed -= instance.OnSpeed;
             @speed.canceled -= instance.OnSpeed;
+            @Velocity.started -= instance.OnVelocity;
+            @Velocity.performed -= instance.OnVelocity;
+            @Velocity.canceled -= instance.OnVelocity;
         }
 
         public void RemoveCallbacks(IXRILeftHandActions instance)
@@ -3389,6 +3439,7 @@ public partial class @XRIDefaultInputActions: IInputActionCollection2, IDisposab
     private readonly InputAction m_XRIRightHand_PokeRotation;
     private readonly InputAction m_XRIRightHand_GripPosition;
     private readonly InputAction m_XRIRightHand_GripRotation;
+    private readonly InputAction m_XRIRightHand_Velocity;
     public struct XRIRightHandActions
     {
         private @XRIDefaultInputActions m_Wrapper;
@@ -3407,6 +3458,7 @@ public partial class @XRIDefaultInputActions: IInputActionCollection2, IDisposab
         public InputAction @PokeRotation => m_Wrapper.m_XRIRightHand_PokeRotation;
         public InputAction @GripPosition => m_Wrapper.m_XRIRightHand_GripPosition;
         public InputAction @GripRotation => m_Wrapper.m_XRIRightHand_GripRotation;
+        public InputAction @Velocity => m_Wrapper.m_XRIRightHand_Velocity;
         public InputActionMap Get() { return m_Wrapper.m_XRIRightHand; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -3458,6 +3510,9 @@ public partial class @XRIDefaultInputActions: IInputActionCollection2, IDisposab
             @GripRotation.started += instance.OnGripRotation;
             @GripRotation.performed += instance.OnGripRotation;
             @GripRotation.canceled += instance.OnGripRotation;
+            @Velocity.started += instance.OnVelocity;
+            @Velocity.performed += instance.OnVelocity;
+            @Velocity.canceled += instance.OnVelocity;
         }
 
         private void UnregisterCallbacks(IXRIRightHandActions instance)
@@ -3504,6 +3559,9 @@ public partial class @XRIDefaultInputActions: IInputActionCollection2, IDisposab
             @GripRotation.started -= instance.OnGripRotation;
             @GripRotation.performed -= instance.OnGripRotation;
             @GripRotation.canceled -= instance.OnGripRotation;
+            @Velocity.started -= instance.OnVelocity;
+            @Velocity.performed -= instance.OnVelocity;
+            @Velocity.canceled -= instance.OnVelocity;
         }
 
         public void RemoveCallbacks(IXRIRightHandActions instance)
@@ -4015,6 +4073,7 @@ public partial class @XRIDefaultInputActions: IInputActionCollection2, IDisposab
         void OnGripPosition(InputAction.CallbackContext context);
         void OnGripRotation(InputAction.CallbackContext context);
         void OnSpeed(InputAction.CallbackContext context);
+        void OnVelocity(InputAction.CallbackContext context);
     }
     public interface IXRILeftHandInteractionActions
     {
@@ -4057,6 +4116,7 @@ public partial class @XRIDefaultInputActions: IInputActionCollection2, IDisposab
         void OnPokeRotation(InputAction.CallbackContext context);
         void OnGripPosition(InputAction.CallbackContext context);
         void OnGripRotation(InputAction.CallbackContext context);
+        void OnVelocity(InputAction.CallbackContext context);
     }
     public interface IXRIRightHandInteractionActions
     {

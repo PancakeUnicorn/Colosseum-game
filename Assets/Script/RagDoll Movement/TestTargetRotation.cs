@@ -23,7 +23,7 @@ public class TestTargetRotation : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
-        player = GameObject.Find("Player");
+        player = GameObject.FindWithTag("PlayerTarget");
         rotateArmTarget = pointofforceHand.GetComponent<RotateArmTarget>();
     }
 
