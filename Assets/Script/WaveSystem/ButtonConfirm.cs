@@ -33,7 +33,7 @@ public class ButtonConfirm : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Left") || other.CompareTag("Right"))
+        if (other.CompareTag("Left") || other.CompareTag("Right") || other.CompareTag("Boxing"))
         {
            
             botAmount.SetActive(false);
