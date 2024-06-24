@@ -12,4 +12,11 @@ public class PlayerinArena : MonoBehaviour
             spawner.playerInArena = true;
         }
     }
+    public void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("Enemy"))
+        {
+            Destroy(other.gameObject);
+        }
+    }
 }

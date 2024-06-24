@@ -56,7 +56,7 @@ SphereCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
@@ -73,6 +73,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _lookatObject: {fileID: 0}
+  _voice: {fileID: 0}
+  _animator: {fileID: 0}
 --- !u!54 &2844738411354476414
 Rigidbody:
   m_ObjectHideFlags: 0

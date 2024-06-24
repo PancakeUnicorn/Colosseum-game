@@ -14,7 +14,7 @@ public class TeleporterGate : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("PlayerinArena"))
         {
             player.transform.position = buttonConfirm.spawnInArena.transform.position;
         }
