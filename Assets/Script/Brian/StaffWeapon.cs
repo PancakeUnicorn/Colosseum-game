@@ -20,8 +20,8 @@ public class StaffWeapon : MonoBehaviour
     public GameObject _magicSpawn;
 
     XRIDefaultInputActions input;
-    InputAction triggerL;
-    InputAction triggerR;
+    public InputAction triggerL;
+    public InputAction triggerR;
 
     private void Awake()
     {
@@ -47,6 +47,8 @@ public class StaffWeapon : MonoBehaviour
 
         triggerL.started -= ShootMagic;
         triggerR.started -= ShootMagic;
+
+        
     }
                                                                                         
     public void ShootMagic(InputAction.CallbackContext context)
