@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Spawner : MonoBehaviour
 {
+    public GameObject player;
     public Transform[] spawnPositions;
     public GameObject[] prefabToSpawn;
     public Transform loadOutZone;
@@ -12,6 +13,7 @@ public class Spawner : MonoBehaviour
     private List<GameObject> spawnedEnemies = new List<GameObject>();
     public bool hasSpawned = false;
     public bool playerInArena = false;  
+    public bool roundHasEnded = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,45 +23,60 @@ public class Spawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!hasSpawned && playerInArena )
+        if (!roundHasEnded)
         {
-            SpawnEnemys();
-            hasSpawned = true;
+            if (!hasSpawned && playerInArena)
+            {
+                SpawnEnemys();
+                hasSpawned = true;
 
+            }
+            if (hasSpawned)
+            {
+                CheckEnemies();
+            }
         }
-        if (hasSpawned)
+        else
         {
-            CheckEnemies();
+            TeleportBack();
         }
        
     }
     public void SpawnEnemys() 
     {
-        for (int i = 0; i < amount; i++)
+        if (!roundHasEnded)
         {
-            var enemy = Random.Range(0, prefabToSpawn.Length);
-            var spawn = Random.Range(0, spawnPositions.Length);
+            for (int i = 0; i < amount; i++)
+            {
+                var enemy = Random.Range(0, prefabToSpawn.Length);
+                var spawn = Random.Range(0, spawnPositions.Length);
 
-            GameObject enemie = Instantiate(prefabToSpawn[enemy], spawnPositions[spawn].position, Quaternion.identity);
-            spawnedEnemies.Add(enemie);
+                GameObject enemie = Instantiate(prefabToSpawn[enemy], spawnPositions[spawn].position, Quaternion.identity);
+                spawnedEnemies.Add(enemie);
+            }
+        }
+        else
+        {
+            TeleportBack();
         }
       
     }
     public void CheckEnemies()
     {
         spawnedEnemies.RemoveAll(item => item == null);
-        if (spawnedEnemies.Count == 0 && amount > 0)
+        if (spawnedEnemies.Count == 0)
         {
-            TeleportBack();
-            hasSpawned = false ;
+          
+            roundHasEnded = true;
         }
     }
     public void TeleportBack()
     {
-        GameObject player = GameObject.FindWithTag("Player");
+        
         if(player != null)
         {
             player.transform.position = loadOutZone.position;
+            hasSpawned = false;
         }
     }
 }

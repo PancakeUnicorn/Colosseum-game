@@ -21,7 +21,7 @@ public class ButtonDown : MonoBehaviour
             }
             else
             {
-                spawner.amount = 6;
+                spawner.amount = 0;
             }
             
         }
