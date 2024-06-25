@@ -70,7 +70,7 @@ public class RotateTrap : MonoBehaviour
     {
         if(other.tag == "Enemy")
         {
-            Debug.Log("Hit");
+        
             fire = other.gameObject.GetComponentInParent<TestTargetRotation>().GetComponentInChildren<ParticleSystem>();
             if (fire != null)
             {

@@ -5,18 +5,21 @@ using UnityEngine;
 public class pitval : MonoBehaviour
 {
     public Transform teleportBack;
+    public Health enemyHealthScript;
+    public Transform player;
     // Start is called before the first frame update
 
-    public void OnTriggerEnter(Collider other)
+    public void OnTriggerStay (Collider other)
     {
         if (other.CompareTag("Enemy"))
         {
-            other.GetComponent<Health>().Death();
+            enemyHealthScript = other.GetComponentInParent<Health>();
+            enemyHealthScript.Death();
             Debug.Log("kill");
         }
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("PlayerInArena"))
         {
-            other.transform.position = teleportBack.position;
+            player.transform.position = teleportBack.position;
         }
     }
 }
