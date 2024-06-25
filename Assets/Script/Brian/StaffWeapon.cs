@@ -46,9 +46,7 @@ public class StaffWeapon : MonoBehaviour
         input.Disable();
 
         triggerL.started -= ShootMagic;
-        triggerR.started -= ShootMagic;
-
-        
+        triggerR.started -= ShootMagic;   
     }
                                                                                         
     public void ShootMagic(InputAction.CallbackContext context)

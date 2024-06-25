@@ -17,6 +17,9 @@ public class TeleporterGate : MonoBehaviour
         if (other.CompareTag("PlayerinArena"))
         {
             player.transform.position = buttonConfirm.spawnInArena.transform.position;
+
+            GameObject.Find("Spawner").GetComponent<Spawner>().playerInArena = true;
+            GameObject.Find("Spawner").GetComponent<Spawner>().hasSpawned = false;
         }
        
     }
