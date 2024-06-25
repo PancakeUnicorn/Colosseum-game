@@ -12,6 +12,7 @@ public class pitval : MonoBehaviour
         if (other.CompareTag("Enemy"))
         {
             other.GetComponent<Health>().Death();
+            Debug.Log("kill");
         }
         if (other.CompareTag("Player"))
         {

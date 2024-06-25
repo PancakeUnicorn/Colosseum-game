@@ -2743,7 +2743,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rigidbodies: []
   joints: []
-  lifePoints: 0
+  lifePoints: 300
   bodyParts: []
   walking: {fileID: 506219381602889086}
   attack: {fileID: 6834850999992875090}
