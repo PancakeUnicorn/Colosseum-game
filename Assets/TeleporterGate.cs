@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class TeleporterGate : MonoBehaviour
 {
+    public Spawner spawner;
     public ButtonConfirm buttonConfirm;
     public Transform player;
     // Start is called before the first frame update
@@ -20,6 +21,7 @@ public class TeleporterGate : MonoBehaviour
 
             GameObject.Find("Spawner").GetComponent<Spawner>().playerInArena = true;
             GameObject.Find("Spawner").GetComponent<Spawner>().hasSpawned = false;
+            GameObject.Find("Spawner").GetComponent<Spawner>().hasTeleported = false;
         }
        
     }

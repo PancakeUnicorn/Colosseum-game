@@ -2761,7 +2761,9 @@ MonoBehaviour:
   attack: {fileID: 6834850999992875090}
   fireTrap: {fileID: 0}
   burned: {fileID: 2100000, guid: 41eed511156f869438e2e5491f88c3aa, type: 2}
+  alive: 0
   _spawnedParts: []
+  lifeTimer: 15
 --- !u!114 &506219381602889086
 MonoBehaviour:
   m_ObjectHideFlags: 0

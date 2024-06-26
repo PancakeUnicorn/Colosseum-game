@@ -16,6 +16,7 @@ public class Health : MonoBehaviour
     public Material burned;
     public bool alive;
     public List<GameObject> _spawnedParts;
+    public float lifeTimer;
     void Awake()
     {
         rigidbodies = gameObject.GetComponentsInChildren<Rigidbody>();
@@ -95,7 +96,7 @@ public class Health : MonoBehaviour
             if(destroyComponent == null)
             {
                 destroyComponent = Obj.AddComponent<Destroy>();
-                destroyComponent._destroyDelay = 30;
+                destroyComponent._destroyDelay = lifeTimer;
             }
             
         }
@@ -104,7 +105,7 @@ public class Health : MonoBehaviour
         if (destroyEnemy == null)
         {
             destroyEnemy = gameObject.AddComponent<Destroy>();
-            destroyEnemy._destroyDelay = 30;
+            destroyEnemy._destroyDelay = lifeTimer;
         }
         
         

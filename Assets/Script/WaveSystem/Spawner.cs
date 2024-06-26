@@ -14,6 +14,7 @@ public class Spawner : MonoBehaviour
     public bool hasSpawned = false;
     public bool playerInArena = false;  
     public bool roundHasEnded = false;
+    public bool hasTeleported = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -38,14 +39,16 @@ public class Spawner : MonoBehaviour
         }
         else
         {
-            TeleportBack();
+            if (!hasTeleported)
+            {
+                TeleportBack();
+
+            }
         }
-       
     }
     public void SpawnEnemys() 
     {
-        if (!roundHasEnded)
-        {
+       
             for (int i = 0; i < amount; i++)
             {
                 var enemy = Random.Range(0, prefabToSpawn.Length);
@@ -54,11 +57,8 @@ public class Spawner : MonoBehaviour
                 GameObject enemie = Instantiate(prefabToSpawn[enemy], spawnPositions[spawn].position, Quaternion.identity);
                 spawnedEnemies.Add(enemie);
             }
-        }
-        else
-        {
-            TeleportBack();
-        }
+        
+     
       
     }
     public void CheckEnemies()
@@ -77,6 +77,9 @@ public class Spawner : MonoBehaviour
         {
             player.transform.position = loadOutZone.position;
             hasSpawned = false;
+            hasTeleported = true;
+            roundHasEnded = false;
+            playerInArena = false;
         }
     }
 }
