@@ -14,7 +14,7 @@ public class Health : MonoBehaviour
     public RotateArmTarget attack;
     public RotateTrap fireTrap;
     public Material burned;
-
+    public bool alive;
     public List<GameObject> _spawnedParts;
     void Awake()
     {
@@ -36,7 +36,7 @@ public class Health : MonoBehaviour
         }
        
      
-        if(lifePoints <= 0)
+        if(lifePoints <= 0 && !alive)
         {
             Death();
         }
@@ -61,6 +61,7 @@ public class Health : MonoBehaviour
     }
     public void Death()
     {
+
         for (int i = 0;i < joints.Length;i++)
         {
             ConfigurableJoint joint = joints[i];
@@ -90,10 +91,23 @@ public class Health : MonoBehaviour
 
         foreach (GameObject Obj in _spawnedParts)
         {
-            Obj.AddComponent<Destroy>()._destroyDelay = 5;
+            Destroy destroyComponent = Obj.GetComponent<Destroy>();
+            if(destroyComponent == null)
+            {
+                destroyComponent = Obj.AddComponent<Destroy>();
+                destroyComponent._destroyDelay = 30;
+            }
+            
         }
+        Destroy destroyEnemy = gameObject.GetComponent<Destroy>();
 
-        gameObject.AddComponent<Destroy>()._destroyDelay = 5;
+        if (destroyEnemy == null)
+        {
+            destroyEnemy = gameObject.AddComponent<Destroy>();
+            destroyEnemy._destroyDelay = 30;
+        }
+        
+        
     }
     public IEnumerator OnFire()
     {

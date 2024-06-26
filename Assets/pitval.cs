@@ -17,7 +17,7 @@ public class pitval : MonoBehaviour
             enemyHealthScript.Death();
             Debug.Log("kill");
         }
-        if (other.CompareTag("PlayerInArena"))
+        if (other.CompareTag("PlayerinArena"))
         {
             player.transform.position = teleportBack.position;
         }

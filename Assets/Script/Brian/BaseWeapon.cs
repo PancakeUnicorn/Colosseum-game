@@ -106,23 +106,8 @@ public class BaseWeapon : MonoBehaviour
 
     void Update()
     {
-        if (_slice.startSlicePoint == null)
-        {
-            //Debug.LogError("startSlicePoint is not assigned.");
-            return;
-        }
-
-        if (_slice.endSlicePoint == null)
-        {
-            //Debug.LogError("endSlicePoint is not assigned.");
-            return;
-        }
-        bool hadHit = Physics.Linecast(_slice.startSlicePoint.position, _slice.endSlicePoint.position, out RaycastHit hit, _slice.sliceableLayer);
-
-        if (hadHit && hit.collider != null)
-        {
-            Hit(hit.collider);
-        }
+        
+        
     }
 
     public void Hit(Collider Hitcoll)

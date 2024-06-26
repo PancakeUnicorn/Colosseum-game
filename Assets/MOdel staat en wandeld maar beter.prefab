@@ -381,6 +381,12 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c26cdeb39bb9eb247a0c7bcabb53a111, type: 3}
+--- !u!1 &362495731733587678 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: c26cdeb39bb9eb247a0c7bcabb53a111,
+    type: 3}
+  m_PrefabInstance: {fileID: 704459451119065999}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1030206515340065892 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: c26cdeb39bb9eb247a0c7bcabb53a111,
@@ -969,6 +975,12 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c26cdeb39bb9eb247a0c7bcabb53a111, type: 3}
+--- !u!1 &1431652371401697060 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: c26cdeb39bb9eb247a0c7bcabb53a111,
+    type: 3}
+  m_PrefabInstance: {fileID: 2242557245847198325}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1771480991715442078 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: c26cdeb39bb9eb247a0c7bcabb53a111,
@@ -2821,6 +2833,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05f7d1fed5868c0428b6d4a5be264dfc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  attachTransform: {fileID: 0}
   _weakPointsColl:
     _head: {fileID: 2043879034792236596}
     _armL: {fileID: 9130923038507458889}
@@ -2828,18 +2841,22 @@ MonoBehaviour:
     _leggL: {fileID: 8229304393733538908}
     _leggR: {fileID: 4198626910616353077}
   _extraColl:
-    _armL: {fileID: 0}
-    _armR: {fileID: 0}
-    _leggL: {fileID: 0}
-    _leggR: {fileID: 0}
+    _armL: {fileID: 2621303553538017620}
+    _armR: {fileID: 955262670551091784}
+    _leggL: {fileID: 961826425003454989}
+    _leggR: {fileID: 1909972351598281325}
   _weakPointGameObect:
     _head: {fileID: 8621996871701718006}
+    _helm: {fileID: 8223842427403279902}
     _armL: {fileID: 4474118705700412349}
-    _weaponL: {fileID: 0}
+    _weaponL: {fileID: 6384974013713419744}
+    _armorL: {fileID: 2627407216325312705}
     _armR: {fileID: 9074275286747332452}
     _weaponR: {fileID: 0}
     _leggL: {fileID: 6518296757761292797}
+    _bootL: {fileID: 1431652371401697060}
     _leggR: {fileID: 4175972617177407405}
+    _bootR: {fileID: 362495731733587678}
   _objectSpawn:
     _head: {fileID: 7976263551569698486, guid: 9310e9dfd98f11f4dbbb666e2d3afa7f, type: 3}
     _armL: {fileID: 7443578923713992038, guid: d224ca7baa8e6924caa7cf2056caa894, type: 3}
@@ -4641,6 +4658,12 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 40a4195e5c41d6a4385e86533be585bf, type: 3}
+--- !u!1 &2627407216325312705 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 40a4195e5c41d6a4385e86533be585bf,
+    type: 3}
+  m_PrefabInstance: {fileID: 2933819320294407568}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &3404084004401322619 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 40a4195e5c41d6a4385e86533be585bf,
@@ -4829,6 +4852,12 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2bd83b3a360e13d44a68c3011adf79ed, type: 3}
+--- !u!1 &8223842427403279902 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 2bd83b3a360e13d44a68c3011adf79ed,
+    type: 3}
+  m_PrefabInstance: {fileID: 9142761119770059599}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &8749128144119186596 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 2bd83b3a360e13d44a68c3011adf79ed,

@@ -1,3 +1,4 @@
+using EzySlice;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -10,11 +11,17 @@ public class HitCollider : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
+        Debug.Log(collision.gameObject);
         _weapon._hitloc = collision.GetContact(0).point;
         _weapon.Hitcollider(collision.gameObject);
         _weapon.Hit(collision.collider);
-
-        if(collision.gameObject.GetComponentInParent<RaggdollHit>())
+        /*bool hadHit = Physics.Linecast(_weapon._slice.startSlicePoint.position, _weapon._slice.endSlicePoint.position, out RaycastHit hit, _weapon._slice.sliceableLayer);
+        if (hadHit && hit.collider != null)
+        {
+            //_weapon.Hit(hit.collider);
+        }
+        */
+        if (collision.gameObject.GetComponentInParent<RaggdollHit>())
         {
             _weapon.EnemyHit(collision.gameObject);
 

@@ -3,6 +3,7 @@ using System;
 
 public class RaggdollHit : MonoBehaviour
 {
+    public Transform attachTransform;
     public WeakPointsColl _weakPointsColl = new WeakPointsColl();
     public ExtraColl _extraColl = new ExtraColl();
     public WeakPointsObject _weakPointGameObect = new WeakPointsObject();
@@ -32,12 +33,16 @@ public class RaggdollHit : MonoBehaviour
     public class WeakPointsObject
     {
         public GameObject _head;
+        public GameObject _helm;
         public GameObject _armL;
         public GameObject _weaponL;
+        public GameObject _armorL;
         public GameObject _armR;
         public GameObject _weaponR;
         public GameObject _leggL;
+        public GameObject _bootL;
         public GameObject _leggR;
+        public GameObject _bootR;
     }
 
     [Serializable]
@@ -71,9 +76,16 @@ public class RaggdollHit : MonoBehaviour
             Destroy(_obj.GetComponentInChildren<SkinnedMeshRenderer>());
             Destroy(_obj.GetComponent<SkinnedMeshRenderer>());
 
+            if(_weakPointGameObect._helm)
+            {
+                Destroy(_weakPointGameObect._helm);
+            }
+
             GameObject Prefab = Instantiate(_objectSpawn._head, _obj.transform.position, _obj.transform.rotation);
             Prefab.AddComponent<UnityEngine.XR.Interaction.Toolkit.XRGrabInteractable>().useDynamicAttach = true;
             Prefab.GetComponent<UnityEngine.XR.Interaction.Toolkit.XRGrabInteractable>().interactionLayers = 3;
+            Prefab.GetComponent<UnityEngine.XR.Interaction.Toolkit.XRGrabInteractable>().attachTransform = GameObject.FindWithTag("Right").transform;
+            Prefab.GetComponent<UnityEngine.XR.Interaction.Toolkit.XRGrabInteractable>().velocityScale = 100f;
             GetComponentInParent<Health>()._spawnedParts.Add(Prefab);
 
             _weakPointsBool._head = false;
@@ -88,8 +100,13 @@ public class RaggdollHit : MonoBehaviour
 
             if (_weakPointGameObect._weaponL)
             {
-                Instantiate(_objectSpawn._weaponL, _weakPointGameObect._weaponL.transform.position, _weakPointGameObect._weaponL.transform.rotation);
+                //Instantiate(_objectSpawn._weaponL, _weakPointGameObect._weaponL.transform.position, _weakPointGameObect._weaponL.transform.rotation);
                 Destroy(_weakPointGameObect._weaponL);
+            }
+
+            if (_weakPointGameObect._armorL)
+            {
+                Destroy(_weakPointGameObect._armorL);
             }
 
             GameObject Prefab = Instantiate(_objectSpawn._armL, _obj.transform.position, _obj.transform.rotation);
@@ -116,6 +133,7 @@ public class RaggdollHit : MonoBehaviour
 
             GameObject Prefab = Instantiate(_objectSpawn._armR, _obj.transform.position, _obj.transform.rotation);
             Prefab.AddComponent<UnityEngine.XR.Interaction.Toolkit.XRGrabInteractable>().useDynamicAttach = true;
+           
             Prefab.GetComponent<UnityEngine.XR.Interaction.Toolkit.XRGrabInteractable>().interactionLayers = 3;
             GetComponentInParent<Health>()._spawnedParts.Add(Prefab);
 
@@ -128,6 +146,11 @@ public class RaggdollHit : MonoBehaviour
             Destroy(_weakPointsColl._leggL.GetComponent<Collider>());
             Destroy(_extraColl._leggL);
             Destroy(_obj.GetComponent<SkinnedMeshRenderer>());
+
+            if (_weakPointGameObect._bootL)
+            {
+                Destroy(_weakPointGameObect._bootL);
+            }
 
             GameObject Prefab = Instantiate(_objectSpawn._leggL, _obj.transform.position, _obj.transform.rotation);
             Prefab.AddComponent<UnityEngine.XR.Interaction.Toolkit.XRGrabInteractable>().useDynamicAttach = true;
@@ -143,6 +166,11 @@ public class RaggdollHit : MonoBehaviour
             Destroy(_weakPointsColl._leggR.GetComponent<Collider>());
             Destroy(_extraColl._leggR);
             Destroy(_obj.GetComponent<SkinnedMeshRenderer>());
+
+            if (_weakPointGameObect._bootR)
+            {
+                Destroy(_weakPointGameObect._bootR);
+            }
 
             GameObject Prefab = Instantiate(_objectSpawn._leggR, _obj.transform.position, _obj.transform.rotation);
             Prefab.AddComponent<UnityEngine.XR.Interaction.Toolkit.XRGrabInteractable>().useDynamicAttach = true;
